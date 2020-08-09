@@ -8,13 +8,18 @@ const navStyle = {
   fontFamily: "Arial",
   fontSize: 30,
   textTransform: "uppercase",
+  color: "white",
+};
+
+const linkStyle = {
+  color: "white",
 };
 
 export default function index() {
   return (
-    <div>
+    <div style={{ color: "white" }}>
       <Navbar style={{ display: "flex" }} expand="lg">
-        <Navbar.Brand href="#home" className="ml-5">
+        <Navbar.Brand href="/" className="ml-5">
           <img style={{ width: "150px" }} src={Logo} alt="BRIC Default Logo" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -23,13 +28,13 @@ export default function index() {
           //   style={{ justifyContent: "flex-end" }}
         >
           <Nav className="ml-auto mr-15" style={navStyle}>
-            <Nav.Link href="#home" className="px-5">
+            <Nav.Link href="/about-us" className="px-5" style={linkStyle}>
               About Us
             </Nav.Link>
-            <Nav.Link href="#link" className="px-5">
+            <Nav.Link href="/calendar" className="px-5" style={linkStyle}>
               Calendar
             </Nav.Link>
-            <Nav.Link href="/dsa" className="px-5">
+            <Nav.Link href="/contact" className="px-5" style={linkStyle}>
               Contact
             </Nav.Link>
           </Nav>

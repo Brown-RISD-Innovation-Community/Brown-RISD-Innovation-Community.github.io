@@ -1,29 +1,74 @@
 import React from "react";
-import ColorBlock from "../../assets/color_block.svg";
+
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import LearnMoreArrow from "../../assets/learnmorearrow.svg";
+import Arrow from "../../assets/arrow.png";
+// import Scissors from "../../assets/scissors.png";
+import Scissors from "../../assets/scissors.svg";
+import NavigationBar from "../../components/NavigationBar";
 
 export function index() {
   return (
     <div style={{ backgroundColor: "#0A44CB", color: "white", height: "100%" }}>
-      <Container>
-        <Row style={{ fontWeight: 500 }}>Brown RISD Innovation Community</Row>
-        <Row>
-          <Col style={{ margin: "auto" }}>
+      <NavigationBar />
+      <Container
+        className="d-flex flex-column justify-content-center"
+        style={{ alignItems: "flex-end", height: "550px" }}
+      >
+        <div style={{ width: "600px" }}>
+          <Row
+            className="mb-2"
+            style={{
+              fontWeight: "bold",
+              fontSize: 30,
+              // width: "600px",
+              textTransform: "uppercase",
+              marginBottom: "",
+            }}
+          >
+            Brown RISD Innovation Community
+          </Row>
+          <Row style={{ textAlign: "left" }} className="mb-4">
             EMPHASIZING THE IMPORTANCE OF INNOVATION IN FIELDS BEYOND PURE
             TECHNOLOGY THROUGH CREATING AN INCLUSIVE SPACE FOR INTERDISCIPLINARY
             COLLABORATION AND LEARNING.
-          </Col>
-        </Row>
+          </Row>
+          <Row className="mt-4">
+            LEARN MORE
+            <img
+              src={Arrow}
+              alt="Arrow to learn more"
+              style={{ width: "100px" }}
+            />
+          </Row>
+        </div>
       </Container>
-      <Container className="mb-5 mt-5">
+      <Container
+        className="mb-5 mt-5"
+        style={{ position: "relative", top: "-30px" }}
+      >
+        <img
+          src={Scissors}
+          alt="Scissors for decoration"
+          style={{
+            transform: "rotate(180deg)",
+            width: "15%",
+            position: "absolute",
+            top: "-150px",
+
+            bottom: 0,
+            right: "-10%",
+            zIndex: 0,
+            overflow: "hidden",
+          }}
+        />
         <div style={{ borderStyle: "dashed" }}>
           <Row style={{ height: "350px" }}>
             <Col
               className="col-4"
               style={{
+                fontWeight: "bold",
                 fontSize: 60,
                 textTransform: "uppercase",
                 margin: "auto",
@@ -53,6 +98,7 @@ export function index() {
                 fontSize: 60,
                 textTransform: "uppercase",
                 margin: "auto",
+                fontWeight: "bold",
               }}
             >
               Values

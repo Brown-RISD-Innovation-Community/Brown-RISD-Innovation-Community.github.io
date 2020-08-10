@@ -4,13 +4,19 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Arrow from "../../assets/arrow.png";
-// import Scissors from "../../assets/scissors.png";
 import Scissors from "../../assets/scissors.svg";
 import NavigationBar from "../../components/NavigationBar";
 
 export function index() {
   return (
-    <div style={{ backgroundColor: "#0A44CB", color: "white", height: "100%" }}>
+    <div
+      style={{
+        backgroundColor: "#0A44CB",
+        color: "white",
+        height: "100%",
+        opacity: 0.75,
+      }}
+    >
       <NavigationBar />
       <Container
         className="d-flex flex-column justify-content-center"

@@ -7,6 +7,8 @@ import Arrow from "../../assets/arrow.png";
 import Scissors from "../../assets/scissors.svg";
 import NavigationBar from "../../components/NavigationBar";
 
+import LandingIllustration from "../../assets/landing_design.svg";
+
 export function index() {
   return (
     <div
@@ -14,41 +16,49 @@ export function index() {
         backgroundColor: "#0A44CB",
         color: "white",
         height: "100%",
-        opacity: 0.75,
       }}
     >
       <NavigationBar />
       <Container
-        className="d-flex flex-column justify-content-center"
-        style={{ alignItems: "flex-end", height: "550px" }}
+        className="d-flex justify-content-center"
+        style={{ height: "600px", alignItems: " center" }}
       >
-        <div style={{ width: "600px" }}>
-          <Row
-            className="mb-2"
-            style={{
-              fontWeight: "bold",
-              fontSize: 30,
-              // width: "600px",
-              textTransform: "uppercase",
-              marginBottom: "",
-            }}
-          >
-            Brown RISD Innovation Community
-          </Row>
-          <Row style={{ textAlign: "left" }} className="mb-4">
-            EMPHASIZING THE IMPORTANCE OF INNOVATION IN FIELDS BEYOND PURE
-            TECHNOLOGY THROUGH CREATING AN INCLUSIVE SPACE FOR INTERDISCIPLINARY
-            COLLABORATION AND LEARNING.
-          </Row>
-          <Row className="mt-4">
-            LEARN MORE
-            <img
-              src={Arrow}
-              alt="Arrow to learn more"
-              style={{ width: "100px" }}
-            />
-          </Row>
-        </div>
+        <Col>
+          <img
+            src={LandingIllustration}
+            alt="Illustration from Undraw on designers"
+            style={{ width: "350px" }}
+          />
+        </Col>
+        <Col>
+          <div style={{ width: "600px" }}>
+            <Row
+              className="mb-2"
+              style={{
+                fontWeight: "bold",
+                fontSize: 30,
+                // width: "600px",
+                textTransform: "uppercase",
+                marginBottom: "",
+              }}
+            >
+              Brown RISD Innovation Community
+            </Row>
+            <Row style={{ textAlign: "left" }} className="mb-4">
+              EMPHASIZING THE IMPORTANCE OF INNOVATION IN FIELDS BEYOND PURE
+              TECHNOLOGY THROUGH CREATING AN INCLUSIVE SPACE FOR
+              INTERDISCIPLINARY COLLABORATION AND LEARNING.
+            </Row>
+            <Row className="mt-4">
+              LEARN MORE
+              <img
+                src={Arrow}
+                alt="Arrow to learn more"
+                style={{ width: "100px" }}
+              />
+            </Row>
+          </div>
+        </Col>
       </Container>
       <Container
         className="mb-5 mt-5"
@@ -95,7 +105,7 @@ export function index() {
           </Row>
         </div>
       </Container>
-      <Container>
+      <Container className="pb-5">
         <div style={{ borderStyle: "dashed" }}>
           <Row style={{ height: "350px" }}>
             <Col

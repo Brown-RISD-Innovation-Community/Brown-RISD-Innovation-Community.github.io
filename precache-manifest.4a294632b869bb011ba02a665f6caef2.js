@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c94204d7c408f6dbd6c3715bdfb4c0b0",
+    "revision": "55b2cfb61c34a40738227ef83872b69b",
     "url": "/index.html"
   },
   {
-    "revision": "0755a7110682dbd71fa7",
+    "revision": "5372edc2ac14420337dd",
     "url": "/static/css/2.9ff99f11.chunk.css"
   },
   {
-    "revision": "56c749c46620aca8cfd7",
-    "url": "/static/css/main.0c5575fa.chunk.css"
+    "revision": "a430d510028a553a6d30",
+    "url": "/static/css/main.8ab6f918.chunk.css"
   },
   {
-    "revision": "0755a7110682dbd71fa7",
-    "url": "/static/js/2.80e1a0cb.chunk.js"
+    "revision": "5372edc2ac14420337dd",
+    "url": "/static/js/2.4e8feee4.chunk.js"
   },
   {
     "revision": "3453b8997016469371284a28c0e873e2",
-    "url": "/static/js/2.80e1a0cb.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.4e8feee4.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "56c749c46620aca8cfd7",
-    "url": "/static/js/main.cd4188e8.chunk.js"
+    "revision": "a430d510028a553a6d30",
+    "url": "/static/js/main.04938cda.chunk.js"
   },
   {
     "revision": "308883af0ce040e34f9f",
@@ -60,12 +60,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/kia.46c65222.jpg"
   },
   {
-    "revision": "deb9ce7a9523b22118d17e0099029307",
-    "url": "/static/media/landing_design.deb9ce7a.svg"
+    "revision": "f241e293c899872dd80849b6e724ab16",
+    "url": "/static/media/landing.f241e293.png"
   },
   {
-    "revision": "434e24fb8ab40ca0c1762ad6f1f62457",
-    "url": "/static/media/logo.434e24fb.svg"
+    "revision": "87b1ff60bece87984b79ae485406fe39",
+    "url": "/static/media/malvika.87b1ff60.jfif"
+  },
+  {
+    "revision": "2f627d7988c5b7cd99235a58af6d85de",
+    "url": "/static/media/multicolor.2f627d79.png"
   },
   {
     "revision": "7bbcfb897f888f13047416d3efb01d3b",
@@ -78,6 +82,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "0e2cabfc0a5e0bcdfd1fc290b6c203eb",
     "url": "/static/media/stephanie.0e2cabfc.jfif"
+  },
+  {
+    "revision": "eb676dabdd993475fd2c0773daada745",
+    "url": "/static/media/team.eb676dab.png"
   },
   {
     "revision": "c1a263f3dcbb8f9d39332adcfc04996f",

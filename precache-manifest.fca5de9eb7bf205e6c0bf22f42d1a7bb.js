@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "55b2cfb61c34a40738227ef83872b69b",
+    "revision": "3c9421ef0933465746dcd41eccd4d399",
     "url": "/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/css/2.9ff99f11.chunk.css"
   },
   {
-    "revision": "a430d510028a553a6d30",
+    "revision": "1f0d9cee035b6b8b52ba",
     "url": "/static/css/main.8ab6f918.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.4e8feee4.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "a430d510028a553a6d30",
-    "url": "/static/js/main.04938cda.chunk.js"
+    "revision": "1f0d9cee035b6b8b52ba",
+    "url": "/static/js/main.52cbf722.chunk.js"
   },
   {
     "revision": "308883af0ce040e34f9f",
@@ -32,8 +32,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/Niyoshi.8c9396e6.jpg"
   },
   {
-    "revision": "3e7bb151958a99f9914c5d6106468ffb",
-    "url": "/static/media/arrow.3e7bb151.png"
+    "revision": "ef5c934b52233e4f060650889affec4e",
+    "url": "/static/media/arrow.ef5c934b.svg"
   },
   {
     "revision": "361987f2d8daafbf1ce857af1dd660b3",

@@ -3,7 +3,7 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Arrow from "../../assets/arrow.png";
+import Arrow from "../../assets/arrow.svg";
 import Scissors from "../../assets/scissors.svg";
 import NavigationBar from "../../components/NavigationBar";
 
@@ -52,9 +52,10 @@ export function index() {
             <Row className="mt-4">
               LEARN MORE
               <img
+                className="mt-2 ml-4"
                 src={Arrow}
                 alt="Arrow to learn more"
-                style={{ width: "100px" }}
+                style={{ width: "350px" }}
               />
             </Row>
           </div>

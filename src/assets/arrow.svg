@@ -1,16 +1,1 @@
-<?xml version="1.0" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
- "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
-<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
- width="880.000000pt" height="611.000000pt" viewBox="0 0 880.000000 611.000000"
- preserveAspectRatio="xMidYMid meet">
-<metadata>
-Created by potrace 1.16, written by Peter Selinger 2001-2019
-</metadata>
-<g transform="translate(0.000000,611.000000) scale(0.100000,-0.100000)"
-fill="#fff" stroke="none">
-<path d="M1200 3505 l0 -2165 1695 0 1695 0 2 -469 3 -468 1497 561 c824 309
-1498 563 1498 566 0 5 -2985 1500 -2995 1500 -3 0 -5 -295 -5 -655 l0 -655
--1508 0 -1508 0 1 1975 1 1975 -188 0 -188 0 0 -2165z"/>
-</g>
-</svg>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840.33 155.52"><defs><style>.cls-1{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:21px;}</style></defs><line class="cls-1" x1="0.01" y1="11.28" x2="794.14" y2="10.5"/><line class="cls-1" x1="783.49" y1="141.52" x2="783.79" y2="0.48"/><line class="cls-1" x1="777.38" y1="147.76" x2="832.9" y2="92.24"/><line class="cls-1" x1="736.21" y1="92.57" x2="791.74" y2="148.09"/></svg>

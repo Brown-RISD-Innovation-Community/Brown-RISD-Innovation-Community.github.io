@@ -3,7 +3,7 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Arrow from "../../assets/arrow.png";
+import Arrow from "../../assets/arrow.svg";
 import NavigationBar from "../../components/NavigationBar";
 
 // Co-chairs Headshots
@@ -43,7 +43,7 @@ export default function index() {
       style={{ backgroundColor: "#FADD02", color: "#0B43CB" }}
     >
       <NavigationBar linkFontColor="#0B43CB" />
-      <Container className="pt-5 d-flex">
+      <Container className="pt-5 d-flex pb-5">
         <Col className="col-8">
           <Row>
             <div style={textStyle}>OUR TEAM</div>
@@ -64,9 +64,10 @@ export default function index() {
               MEET OUR TEAM
             </div>
             <img
+              className="mt-3 ml-4"
               src={Arrow}
               alt="Arrow to meet the team"
-              style={{ width: "100px" }}
+              style={{ width: "300px" }}
             />
           </Row>
         </Col>

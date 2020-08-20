@@ -7,7 +7,7 @@ import Arrow from "../../assets/arrow.png";
 import Scissors from "../../assets/scissors.svg";
 import NavigationBar from "../../components/NavigationBar";
 
-import LandingIllustration from "../../assets/landing_design.svg";
+import LandingIllustration from "../../assets/landing.png";
 
 export function index() {
   return (
@@ -18,7 +18,7 @@ export function index() {
         height: "100%",
       }}
     >
-      <NavigationBar />
+      <NavigationBar linkFontColor="white" />
       <Container
         className="d-flex justify-content-center"
         style={{ height: "600px", alignItems: " center" }}

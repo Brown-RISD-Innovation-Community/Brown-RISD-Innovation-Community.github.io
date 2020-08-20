@@ -1,14 +1,14 @@
 import React from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import Arrow from "../../assets/arrow.png";
+// import Col from "react-bootstrap/Col";
+// import Arrow from "../../assets/arrow.png";
 import NavigationBar from "../../components/NavigationBar";
 
 export default function index() {
   return (
     <div style={{ backgroundColor: "#D3143A", color: "white" }}>
-      <NavigationBar />
+      <NavigationBar linkFontColor="white" />
       <Container>
         <div className="m-4" style={{ fontSize: "48px" }}>
           CALENDAR

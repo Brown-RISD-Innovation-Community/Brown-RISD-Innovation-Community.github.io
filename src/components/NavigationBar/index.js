@@ -11,13 +11,9 @@ const navStyle = {
   color: "white",
 };
 
-const linkStyle = {
-  color: "white",
-};
-
-export default function index() {
+export default function index({ linkFontColor }) {
   return (
-    <div style={{ color: "white" }}>
+    <div className="p-4" style={{ color: "white" }}>
       <Navbar style={{ display: "flex" }} expand="lg">
         <Navbar.Brand href="/" className="ml-5">
           {/* {logo} */}
@@ -26,13 +22,25 @@ export default function index() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto mr-15" style={navStyle}>
-            <Nav.Link href="/about-us" className="px-5" style={linkStyle}>
+            <Nav.Link
+              href="/about-us"
+              className="px-5"
+              style={{ color: linkFontColor }}
+            >
               About Us
             </Nav.Link>
-            <Nav.Link href="/calendar" className="px-5" style={linkStyle}>
+            <Nav.Link
+              href="/calendar"
+              className="px-5"
+              style={{ color: linkFontColor }}
+            >
               Calendar
             </Nav.Link>
-            <Nav.Link href="/contact" className="px-5" style={linkStyle}>
+            <Nav.Link
+              href="/contact"
+              className="px-5"
+              style={{ color: linkFontColor }}
+            >
               Contact
             </Nav.Link>
           </Nav>

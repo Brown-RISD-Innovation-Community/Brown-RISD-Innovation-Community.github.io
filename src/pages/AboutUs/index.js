@@ -18,25 +18,51 @@ import Brie from "../../assets/headshots/brie.jfif";
 import Christine from "../../assets/headshots/christine.png";
 import Kia from "../../assets/headshots/kia.jpg";
 import Stephanie from "../../assets/headshots/stephanie.jfif";
+import Malvika from "../../assets/headshots/malvika.jfif";
+
+// Illustration Import
+import TeamIllustration from "../../assets/team.png";
+
+const textStyle = {
+  fontSize: 48,
+  fontWeight: "bold",
+  color: "#0B43CB",
+};
+
+const bodyStyle = {
+  fontSize: 32,
+  fontWeight: "bold",
+  color: "#0B43CB",
+  textAlign: "left",
+};
 
 export default function index() {
   return (
-    <div style={{ backgroundColor: "#FADD02" }}>
-      <NavigationBar />
-      <Container>
-        <Col>
+    <div
+      className="pb-5"
+      style={{ backgroundColor: "#FADD02", color: "#0B43CB" }}
+    >
+      <NavigationBar linkFontColor="#0B43CB" />
+      <Container className="pt-5 d-flex">
+        <Col className="col-8">
           <Row>
-            <div>Our Team</div>
+            <div style={textStyle}>OUR TEAM</div>
           </Row>
-          <Row>
-            <div>
-              BRIC BRINGS TOGETHER STUDENTS FROM BROWN UNIVERSITY AND RISD OUR
+          <Row className="pt-3 pb-3">
+            <div style={bodyStyle}>
+              BRIC BRINGS TOGETHER STUDENTS FROM{" "}
+              <bdi style={{ textDecoration: "underline" }}>
+                BROWN UNIVERSITY
+              </bdi>{" "}
+              AND <bdi style={{ textDecoration: "underline" }}>RISD</bdi> OUR
               INTERESTS RANGE FROM ENTREPRENEURSHIP AND HISTORY TO DESIGN AND
               TECHNOLOGY.{" "}
             </div>
           </Row>
           <Row>
-            <div>Meet our team</div>
+            <div className="pl-5" style={{ color: "#0B43CB", fontSize: 24 }}>
+              MEET OUR TEAM
+            </div>
             <img
               src={Arrow}
               alt="Arrow to meet the team"
@@ -44,114 +70,141 @@ export default function index() {
             />
           </Row>
         </Col>
+        <Col>
+          <img src={TeamIllustration} alt="Illustration for Team Page" />
+        </Col>
       </Container>
       <Container style={{ backgroundColor: "white", borderRadius: "25px" }}>
-        <Row>Co-Chairs</Row>
-        <Row>
-          <div>
+        <Row className="pl-5 pt-3 pb-3" style={bodyStyle}>
+          Co-Chairs
+        </Row>
+        <Row className="pb-5">
+          <div className="pl-5">
             <img
               src={Ivan}
               alt="headshot of Ivan"
               style={{ width: "175px", borderRadius: "50%" }}
             />
-            <div>Ivan Zhao</div>
+            <div className="font-weight-bold pt-3">Ivan Zhao</div>
             <div>Brown '22</div>
             <div>APMA - CS</div>
           </div>
 
-          <div>
+          <div className="pl-5">
             <img
               src={Xinru}
               alt="headshot of Xinru"
               style={{ width: "175px", borderRadius: "50%" }}
             />
-            <div>Xinru Li</div>
+            <div className="font-weight-bold pt-3">Xinru Li</div>
             <div>Brown '22</div>
             <div>Music</div>
           </div>
-          <div>
+          <div className="pl-5">
             <img
               src={Aryan}
               alt="headshot of Aryan"
               style={{ width: "175px", borderRadius: "50%" }}
             />
-            <div>Aryan Srivasra</div>
+            <div className="font-weight-bold pt-3">Aryan Srivasra</div>
             <div>Brown '22</div>
             <div>CS</div>
           </div>
         </Row>
       </Container>
-      <Container style={{ backgroundColor: "white", borderRadius: "25px" }}>
-        <Row>E-BOARD</Row>
-        <Row>Curriculum</Row>
+      <Container
+        className="mt-5 pb-5"
+        style={{ backgroundColor: "white", borderRadius: "25px" }}
+      >
+        <Row className="pl-5 pt-3 pb-3" style={bodyStyle}>
+          E-BOARD
+        </Row>
+        <Row className="pl-5 mb-3 font-weight-bold" style={{ fontSize: 24 }}>
+          Curriculum
+        </Row>
         <Row>
-          <div>
+          <div className="pl-5">
             <img
               src={Niyoshi}
               alt="headshot of Niyoshi"
               style={{ width: "175px", borderRadius: "50%" }}
             />
-            <div>Niyoshi </div>
+            <div className="font-weight-bold pt-3">Niyoshi </div>
             <div>Brown '22</div>
             <div>Architecture CS</div>
           </div>
 
-          <div>
+          <div className="pl-5">
             <img
               src={Brie}
               alt="headshot of Brie"
               style={{ width: "175px", borderRadius: "50%" }}
             />
-            <div>Brie </div>
+            <div className="font-weight-bold pt-3">Brie </div>
             <div>Brown '22</div>
             <div>Mechanical Engineering</div>
           </div>
         </Row>
-        <Row>Marketing and Design</Row>
+        <Row
+          className="pl-5 pt-5 mb-3 font-weight-bold"
+          style={{ fontSize: 24 }}
+        >
+          Marketing and Design
+        </Row>
         <Row>
-          <div>
+          <div className="pl-5">
             <img
               src={Audrey}
               alt="headshot of Audrey"
               style={{ width: "175px", borderRadius: "50%" }}
             />
-            <div>Audrey Kang</div>
+            <div className="font-weight-bold pt-3">Audrey Kang</div>
             <div>RISD '22</div>
             <div>Interior Architecture</div>
           </div>
-          <div>
+          <div className="pl-5">
             <img
               src={Christine}
               alt="headshot of Christine"
               style={{ width: "175px", borderRadius: "50%" }}
             />
-            <div>Christine Lin</div>
+            <div className="font-weight-bold pt-3">Christine Lin</div>
             <div>Brown '22</div>
             <div>CS</div>
           </div>
-          <div>
+          <div className="pl-5">
             <img
               src={Kia}
               alt="headshot of Kia"
               style={{ width: "175px", borderRadius: "50%" }}
             />
-            <div>Kia Uusitalo</div>
+            <div className="font-weight-bold pt-3">Kia Uusitalo</div>
             <div>Brown '23</div>
             <div>Organizational Studies</div>
           </div>
-          <div>
+          <div className="pl-5">
             <img
               src={Stephanie}
               alt="headshot of Stephanie"
               style={{ width: "175px", borderRadius: "50%" }}
             />
-            <div>Stephanie Park</div>
+            <div className="font-weight-bold pt-3">Stephanie Park</div>
             <div>RISD '22</div>
             <div>Industrial Design</div>
           </div>
+          <div className="pl-5">
+            <img
+              src={Malvika}
+              alt="headshot of Malvika"
+              style={{ width: "175px", borderRadius: "50%" }}
+            />
+            <div className="font-weight-bold pt-3">Malvika Agarwal</div>
+            <div>RISD '22</div>
+            <div>Graphic Design</div>
+          </div>
         </Row>
 
-        <Row>Operations</Row>
+        {/* <Row>Operations</Row> */}
       </Container>
     </div>
   );

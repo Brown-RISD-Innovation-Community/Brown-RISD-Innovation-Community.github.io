@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Col, Row } from "react-bootstrap";
 
-import colorLogo from "../../assets/logo.svg";
+import colorLogo from "../../assets/multicolor.png";
 
 export default function index() {
   const getYear = () => {
@@ -20,15 +20,22 @@ export default function index() {
       <Container>
         <Row>
           <Col>
-            <img src={colorLogo} alt="BRIC logo" style={{ width: "150px" }} />
+            <img
+              className="mt-2"
+              src={colorLogo}
+              alt="BRIC logo"
+              style={{ width: "150px" }}
+            />
           </Col>
           <Col>
-            Want to stay connected? Join our mailing list!
+            <div className="mb-3">
+              Want to stay connected? Join our mailing list!
+            </div>
             <iframe
               src="https://brownrisdinnovation.substack.com/embed"
               style={{
-                width: "480",
-                height: "320",
+                width: "48",
+                height: "100px",
                 // style: "border:1px solid #EEE; background:white;",
                 // frameborder: "0",
                 scrolling: "no",

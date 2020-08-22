@@ -2,6 +2,7 @@ import React from "react";
 
 import Navbar from "react-bootstrap/NavBar";
 import Nav from "react-bootstrap/Nav";
+import NavDropdown from "react-bootstrap/NavDropdown";
 import Logo from "../../assets/new_logo.svg";
 
 const navStyle = {
@@ -22,19 +23,16 @@ export default function index({ linkFontColor }) {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto mr-15" style={navStyle}>
+          <NavDropdown title="Curriculum" id="basic-nav-dropdown" className="px-5">
+            <NavDropdown.Item href="/curriculum">About the Curriculum</NavDropdown.Item>
+            <NavDropdown.Item href="/calendar">Event Calendar</NavDropdown.Item>
+          </NavDropdown>
             <Nav.Link
               href="/about-us"
               className="px-5"
               style={{ color: linkFontColor }}
             >
               About Us
-            </Nav.Link>
-            <Nav.Link
-              href="/calendar"
-              className="px-5"
-              style={{ color: linkFontColor }}
-            >
-              Calendar
             </Nav.Link>
             <Nav.Link
               href="/contact"
@@ -49,3 +47,11 @@ export default function index({ linkFontColor }) {
     </div>
   );
 }
+
+// <Nav.Link
+//   href="/calendar"
+//   className="px-5"
+//   style={{ color: linkFontColor }}
+// >
+//   Calendar
+// </Nav.Link>

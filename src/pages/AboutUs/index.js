@@ -54,7 +54,7 @@ export default function index() {
               <bdi style={{ textDecoration: "underline" }}>
                 BROWN UNIVERSITY
               </bdi>{" "}
-              AND <bdi style={{ textDecoration: "underline" }}>RISD</bdi> OUR
+              AND <bdi style={{ textDecoration: "underline" }}>RISD</bdi>. OUR
               INTERESTS RANGE FROM ENTREPRENEURSHIP AND HISTORY TO DESIGN AND
               TECHNOLOGY.{" "}
             </div>
@@ -107,7 +107,7 @@ export default function index() {
               alt="headshot of Aryan"
               style={{ width: "175px", borderRadius: "50%" }}
             />
-            <div className="font-weight-bold pt-3">Aryan Srivasra</div>
+            <div className="font-weight-bold pt-3">Aryan Srivastava</div>
             <div>Brown '22</div>
             <div>CS</div>
           </div>
@@ -130,7 +130,7 @@ export default function index() {
               alt="headshot of Niyoshi"
               style={{ width: "175px", borderRadius: "50%" }}
             />
-            <div className="font-weight-bold pt-3">Niyoshi </div>
+            <div className="font-weight-bold pt-3">Niyoshi Parekh</div>
             <div>Brown '22</div>
             <div>Architecture CS</div>
           </div>
@@ -141,7 +141,7 @@ export default function index() {
               alt="headshot of Brie"
               style={{ width: "175px", borderRadius: "50%" }}
             />
-            <div className="font-weight-bold pt-3">Brie </div>
+            <div className="font-weight-bold pt-3">Brie Rowey</div>
             <div>Brown '22</div>
             <div>Mechanical Engineering</div>
           </div>

@@ -1,25 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.8ab6f918.chunk.css",
-    "main.js": "/static/js/main.0941d76e.chunk.js",
-    "main.js.map": "/static/js/main.0941d76e.chunk.js.map",
+    "main.css": "/static/css/main.dc592726.chunk.css",
+    "main.js": "/static/js/main.38275cbd.chunk.js",
+    "main.js.map": "/static/js/main.38275cbd.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.594212dd.js",
     "runtime-main.js.map": "/static/js/runtime-main.594212dd.js.map",
     "static/css/2.9ff99f11.chunk.css": "/static/css/2.9ff99f11.chunk.css",
-    "static/js/2.4e8feee4.chunk.js": "/static/js/2.4e8feee4.chunk.js",
-    "static/js/2.4e8feee4.chunk.js.map": "/static/js/2.4e8feee4.chunk.js.map",
+    "static/js/2.26c37607.chunk.js": "/static/js/2.26c37607.chunk.js",
+    "static/js/2.26c37607.chunk.js.map": "/static/js/2.26c37607.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.b79038a21e3a865a046a8c83a246851b.js": "/precache-manifest.b79038a21e3a865a046a8c83a246851b.js",
+    "precache-manifest.4d03604b32756b518474ff03e2c0665c.js": "/precache-manifest.4d03604b32756b518474ff03e2c0665c.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.9ff99f11.chunk.css.map": "/static/css/2.9ff99f11.chunk.css.map",
-    "static/css/main.8ab6f918.chunk.css.map": "/static/css/main.8ab6f918.chunk.css.map",
-    "static/js/2.4e8feee4.chunk.js.LICENSE.txt": "/static/js/2.4e8feee4.chunk.js.LICENSE.txt",
+    "static/css/main.dc592726.chunk.css.map": "/static/css/main.dc592726.chunk.css.map",
+    "static/js/2.26c37607.chunk.js.LICENSE.txt": "/static/js/2.26c37607.chunk.js.LICENSE.txt",
     "static/media/Niyoshi.jpg": "/static/media/Niyoshi.8c9396e6.jpg",
     "static/media/arrow.svg": "/static/media/arrow.ef5c934b.svg",
     "static/media/aryan.jfif": "/static/media/aryan.361987f2.jfif",
     "static/media/audrey.jfif": "/static/media/audrey.367d3678.jfif",
     "static/media/brie.jfif": "/static/media/brie.4255e47f.jfif",
     "static/media/christine.png": "/static/media/christine.ffc4ac81.png",
+    "static/media/curriculum.png": "/static/media/curriculum.49bb26a5.png",
     "static/media/ivan.png": "/static/media/ivan.b917a60e.png",
     "static/media/kia.jpg": "/static/media/kia.46c65222.jpg",
     "static/media/landing.png": "/static/media/landing.f241e293.png",
@@ -34,8 +35,8 @@
   "entrypoints": [
     "static/js/runtime-main.594212dd.js",
     "static/css/2.9ff99f11.chunk.css",
-    "static/js/2.4e8feee4.chunk.js",
-    "static/css/main.8ab6f918.chunk.css",
-    "static/js/main.0941d76e.chunk.js"
+    "static/js/2.26c37607.chunk.js",
+    "static/css/main.dc592726.chunk.css",
+    "static/js/main.38275cbd.chunk.js"
   ]
 }

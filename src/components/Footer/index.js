@@ -29,41 +29,39 @@ export default function index() {
           </Col>
           <Col>
             <div className="mb-3">
-              Want to stay connected? Join our mailing list!
+              Want to get involved? Join our community!
             </div>
             <iframe
               src="https://brownrisdinnovation.substack.com/embed"
               style={{
                 width: "48",
                 height: "100px",
-                // style: "border:1px solid #EEE; background:white;",
-                // frameborder: "0",
                 scrolling: "no",
               }}
+              frameBorder="0"
               title="Joining the substack"
             ></iframe>
           </Col>
           <Col style={{ textAlign: "left" }}>
-            <h5 className="title">Links</h5>
             <ul style={{ color: "white" }}>
               <li className="list-unstyled">
-                <a href="/" style={listStyle}>
-                  Home
-                </a>
-              </li>
-              <li className="list-unstyled">
                 <a href="/about-us" style={listStyle}>
-                  About Us
+                  - About Us
                 </a>
               </li>
               <li className="list-unstyled">
                 <a href="/calendar" style={listStyle}>
-                  Calendar
+                  - Calendar
+                </a>
+              </li>
+              <li className="list-unstyled">
+                <a href="/curriculum" style={listStyle}>
+                  - Curriculum
                 </a>
               </li>
               <li className="list-unstyled">
                 <a href="/contact" style={listStyle}>
-                  Contact Us
+                  - Contact Us
                 </a>
               </li>
             </ul>

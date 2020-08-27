@@ -4,7 +4,6 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Arrow from "../../assets/arrow.svg";
-import NavigationBar from "../../components/NavigationBar";
 
 // Co-chairs Headshots
 import Ivan from "../../assets/headshots/ivan.png";
@@ -22,6 +21,19 @@ import Malvika from "../../assets/headshots/malvika.jfif";
 
 // Illustration Import
 import TeamIllustration from "../../assets/team.png";
+
+import Navbar from "react-bootstrap/NavBar";
+import Nav from "react-bootstrap/Nav";
+import NavDropdown from "react-bootstrap/NavDropdown";
+import Logo from "../../assets/new_logo.svg";
+import "./main.css";
+
+const navStyle = {
+  fontFamily: "Arial",
+  fontSize: 24,
+  textTransform: "uppercase",
+  // color: "white",
+};
 
 const textStyle = {
   fontSize: 48,
@@ -42,7 +54,48 @@ export default function index() {
       className="pb-5"
       style={{ backgroundColor: "#FADD02", color: "#0B43CB" }}
     >
-      <NavigationBar linkFontColor="#0B43CB" />
+      <div className="p-4" style={{ color: "white" }}>
+        <Navbar style={{ display: "flex" }} expand="lg">
+          <Navbar.Brand href="/" className="ml-5">
+            <img
+              style={{ width: "150px" }}
+              src={Logo}
+              alt="BRIC Default Logo"
+            />
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="ml-auto mr-15" style={navStyle}>
+              <NavDropdown
+                title="Curriculum"
+                id="nav-dropdown"
+                className="px-5"
+              >
+                <NavDropdown.Item href="/curriculum">
+                  About the Curriculum
+                </NavDropdown.Item>
+                <NavDropdown.Item href="/calendar">
+                  Event Calendar
+                </NavDropdown.Item>
+              </NavDropdown>
+              <Nav.Link
+                href="/about-us"
+                className="px-5"
+                style={{ color: "#0B43CB" }}
+              >
+                About Us
+              </Nav.Link>
+              <Nav.Link
+                href="/contact"
+                className="px-5"
+                style={{ color: "#0B43CB" }}
+              >
+                Contact
+              </Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
+        </Navbar>
+      </div>
       <Container className="pt-5 d-flex pb-5">
         <Col className="col-8">
           <Row>
@@ -145,14 +198,6 @@ export default function index() {
             <div>Brown '22</div>
             <div>Mechanical Engineering</div>
           </div>
-        </Row>
-        <Row
-          className="pl-5 pt-5 mb-3 font-weight-bold"
-          style={{ fontSize: 24 }}
-        >
-          Marketing and Design
-        </Row>
-        <Row>
           <div className="pl-5">
             <img
               src={Audrey}
@@ -163,6 +208,14 @@ export default function index() {
             <div>RISD '22</div>
             <div>Interior Architecture</div>
           </div>
+        </Row>
+        <Row
+          className="pl-5 pt-5 mb-3 font-weight-bold"
+          style={{ fontSize: 24 }}
+        >
+          Marketing and Design
+        </Row>
+        <Row>
           <div className="pl-5">
             <img
               src={Christine}

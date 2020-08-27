@@ -22,7 +22,7 @@ export default function index() {
       style={{ backgroundColor: "#00BFA9", color: "#0B43CB", height: "75vh" }}
     >
       <NavigationBar linkFontColor="white" />
-      <Container className="mt-5 mb-5" style={{}}>
+      <Container className="pt-5 mb-5">
         <Row className="font-weight-bold" style={textStyle}>
           CONNECT WITH US ON SOCIAL MEDIA
         </Row>

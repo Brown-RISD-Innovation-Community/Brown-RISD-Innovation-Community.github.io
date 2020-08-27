@@ -9,7 +9,7 @@ const navStyle = {
   fontFamily: "Arial",
   fontSize: 24,
   textTransform: "uppercase",
-  color: "white",
+  // color: "white",
 };
 
 export default function index({ linkFontColor }) {
@@ -17,16 +17,23 @@ export default function index({ linkFontColor }) {
     <div className="p-4" style={{ color: "white" }}>
       <Navbar style={{ display: "flex" }} expand="lg">
         <Navbar.Brand href="/" className="ml-5">
-          {/* {logo} */}
           <img style={{ width: "150px" }} src={Logo} alt="BRIC Default Logo" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto mr-15" style={navStyle}>
-          <NavDropdown title="Curriculum" id="basic-nav-dropdown" className="px-5">
-            <NavDropdown.Item href="/curriculum">About the Curriculum</NavDropdown.Item>
-            <NavDropdown.Item href="/calendar">Event Calendar</NavDropdown.Item>
-          </NavDropdown>
+            <NavDropdown
+              title="Curriculum"
+              id="basic-nav-dropdown"
+              className="px-5"
+            >
+              <NavDropdown.Item href="/curriculum">
+                About the Curriculum
+              </NavDropdown.Item>
+              <NavDropdown.Item href="/calendar">
+                Event Calendar
+              </NavDropdown.Item>
+            </NavDropdown>
             <Nav.Link
               href="/about-us"
               className="px-5"

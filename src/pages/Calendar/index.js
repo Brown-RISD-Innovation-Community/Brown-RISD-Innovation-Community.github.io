@@ -12,38 +12,51 @@ export default function index() {
     <div style={{ backgroundColor: "#D3143A", color: "white" }}>
       <NavigationBar linkFontColor="white" />
       <Container>
-        <div className="m-4" style={{ fontSize: "48px" , margin: "10px"}}>
+        <div className="m-4" style={{ fontSize: "48px", margin: "10px" }}>
           CALENDAR
         </div>
         <Row>
           <Col xs={6}>
-            <div className="p-4" style={{ textAlign: "left", borderStyle: "dashed", height: "600px", marginLeft: "-120px", marginRight: "20px", scrolling: "yes", overflow: "scroll" }}>
+            <div
+              className="p-4"
+              style={{
+                textAlign: "left",
+                borderStyle: "dashed",
+                height: "600px",
+                marginLeft: "-120px",
+                marginRight: "20px",
+                scrolling: "yes",
+                overflow: "scroll",
+              }}
+            >
               <h4>Fall 2020 Workshops</h4>
-              <br/>
+              <br />
               <h5>9/22: Ideation 7-8PM EST</h5>
-              <p style={{fontSize: "18px"}}>I'm baby schlitz street art ugh typewriter hot chicken meditation. Vape trust fund vinyl next level forage scenester typewriter bespoke edison bulb chartreuse kitsch cloud bread. Pok pok selfies you probably haven't heard of them squid. </p>
-              <br/>
+              <p style={{ fontSize: "18px" }}>Coming Soon! </p>
+              <br />
               <h5>9/22: Social Innovation and Methods of Change 7-8PM EST</h5>
-              <p style={{fontSize: "18px"}}>I'm baby schlitz street art ugh typewriter hot chicken meditation. Vape trust fund vinyl next level forage scenester typewriter bespoke edison bulb chartreuse kitsch cloud bread. Pok pok selfies you probably haven't heard of them squid. </p>
-              <br/>
+              <p style={{ fontSize: "18px" }}>Coming Soon! </p>
+              <br />
               <h5>9/29: Data Analysis and Visualization (Coding) 7-8PM EST</h5>
-              <p style={{fontSize: "18px"}}>I'm baby schlitz street art ugh typewriter hot chicken meditation. Vape trust fund vinyl next level forage scenester typewriter bespoke edison bulb chartreuse kitsch cloud bread. Pok pok selfies you probably haven't heard of them squid. </p>
-              <br/>
-              <h5>9/29: Data Analysis and Visualization (non-coding) 7-8PM EST</h5>
-              <p style={{fontSize: "18px"}}>I'm baby schlitz street art ugh typewriter hot chicken meditation. Vape trust fund vinyl next level forage scenester typewriter bespoke edison bulb chartreuse kitsch cloud bread. Pok pok selfies you probably haven't heard of them squid. </p>
-              <br/>
+              <p style={{ fontSize: "18px" }}>Coming Soon! </p>
+              <br />
+              <h5>
+                9/29: Data Analysis and Visualization (non-coding) 7-8PM EST
+              </h5>
+              <p style={{ fontSize: "18px" }}>Coming Soon! </p>
+              <br />
               <h5>10/6: UI Design 7-8PM EST</h5>
-              <p style={{fontSize: "18px"}}>Figma baby schlitz street art ugh typewriter hot chicken meditation. Vape trust fund vinyl next level forage scenester typewriter bespoke edison bulb chartreuse kitsch cloud bread. Pok pok selfies you probably haven't heard of them squid. </p>
-              <br/>
+              <p style={{ fontSize: "18px" }}>Coming Soon!</p>
+              <br />
               <h5>10/6: Branding and Packaging 7-8PM EST</h5>
-              <p style={{fontSize: "18px"}}>Figma baby schlitz street art ugh typewriter hot chicken meditation. Vape trust fund vinyl next level forage scenester typewriter bespoke edison bulb chartreuse kitsch cloud bread. Pok pok selfies you probably haven't heard of them squid. </p>
-              <br/>
+              <p style={{ fontSize: "18px" }}>Coming Soon!</p>
+              <br />
               <h5>10/13: Urban Art Installations 7-8PM EST</h5>
-              <p style={{fontSize: "18px"}}>Figma baby schlitz street art ugh typewriter hot chicken meditation. Vape trust fund vinyl next level forage scenester typewriter bespoke edison bulb chartreuse kitsch cloud bread. Pok pok selfies you probably haven't heard of them squid. </p>
-              <br/>
+              <p style={{ fontSize: "18px" }}>Coming Soon!</p>
+              <br />
               <h5>10/13: Urban Planning 7-8PM EST</h5>
-              <p style={{fontSize: "18px"}}>Figma baby schlitz street art ugh typewriter hot chicken meditation. Vape trust fund vinyl next level forage scenester typewriter bespoke edison bulb chartreuse kitsch cloud bread. Pok pok selfies you probably haven't heard of them squid. </p>
-              </div>
+              <p style={{ fontSize: "18px" }}>Coming Soon!</p>
+            </div>
           </Col>
           <Col xs={6}>
             <iframe
@@ -68,7 +81,7 @@ export default function index() {
         >
           Upcoming Events
         </Row>
-        <Row className="ml-4" style={{fontSize:"18px"}}>
+        <Row className="ml-4" style={{ fontSize: "18px" }}>
           None for now, stay tuned though!
           {/* Take the events and map it to an event with a flex justification of space around */}
         </Row>

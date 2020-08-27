@@ -19,7 +19,7 @@ const textStyle = {
 export default function index() {
   return (
     <div
-      style={{ backgroundColor: "#00BFA9", color: "#0B43CB", height: "75vh" }}
+      style={{ backgroundColor: "#00BFA9", color: "#0B43CB", height: "80vh" }}
     >
       <NavigationBar linkFontColor="white" />
       <Container className="pt-5 mb-5">

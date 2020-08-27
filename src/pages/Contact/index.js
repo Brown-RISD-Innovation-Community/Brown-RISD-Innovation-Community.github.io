@@ -71,7 +71,9 @@ export default function index() {
         </Row>
         <Row className="pt-3 pb-3" style={{ fontSize: 24 }}>
           Email us here:&nbsp;
-          <a href="mailto:ivan_zhao@brown.edu">ivan_zhao@brown.edu</a>
+          <a href="mailto:hello@brownrisdinnovation.com">
+            hello@brownrisdinnovation.com
+          </a>
         </Row>
       </Container>
     </div>

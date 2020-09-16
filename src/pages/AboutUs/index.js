@@ -223,7 +223,7 @@ export default function index() {
               style={{ width: "175px", borderRadius: "50%" }}
             />
             <div className="font-weight-bold pt-3">Christine Lin</div>
-            <div>Brown '22</div>
+            <div>Brown '21</div>
             <div>CS</div>
           </div>
           <div className="pl-5">

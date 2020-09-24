@@ -34,23 +34,23 @@ export default function index() {
 
               <h5>9/26: Social Innovation and Methods of Change 2-3PM EST</h5>
               <p style={{ fontSize: "18px" }}>
+                Explore different approaches to social innovation and the
+                various methods of changemaking across different discipline
                 Zoom:{" "}
                 <a href="https://brown.zoom.us/j/9172022611" target="_blank">
                   here
                 </a>
-                Explore different approaches to social innovation and the
-                various methods of changemaking across different discipline
               </p>
               <br />
               <h5>9/27: Ideation 2-3PM EST</h5>
               <p style={{ fontSize: "18px" }}>
+                Want to start a project but unsure of how to come up with an
+                idea? Come join our workshop on an introduction to ideation and
+                design thinking where you'll learn the basics of getting started{" "}
                 Zoom:{" "}
                 <a href="https://brown.zoom.us/j/2362928657" target="_blank">
                   here
                 </a>
-                Want to start a project but unsure of how to come up with an
-                idea? Come join our workshop on an introduction to ideation and
-                design thinking where you'll learn the basics of getting started{" "}
               </p>
               <br />
               <h5>9/29: Data Analysis and Visualization (Coding) 7-8PM EST</h5>

@@ -19,7 +19,7 @@ export default function index() {
     <div className="p-3" style={{ backgroundColor: "#43464b", color: "white" }}>
       <Container>
         <Row>
-          <Col>
+          <Col xs={12} md={4}>
             <img
               className="mt-2"
               src={colorLogo}
@@ -27,7 +27,7 @@ export default function index() {
               style={{ width: "150px" }}
             />
           </Col>
-          <Col>
+          <Col xs={12} md={4}>
             <div className="mb-3">
               Want to get involved? Join our community!
             </div>
@@ -37,12 +37,13 @@ export default function index() {
                 width: "48",
                 height: "100px",
                 scrolling: "no",
+                maxWidth: "100%",
               }}
               frameBorder="0"
               title="Joining the substack"
             ></iframe>
           </Col>
-          <Col style={{ textAlign: "left" }}>
+          <Col xs={12} md={4} style={{ textAlign: "left" }}>
             <ul style={{ color: "white" }}>
               <li className="list-unstyled">
                 <a href="/about-us" style={listStyle}>

@@ -20,18 +20,19 @@ export function index() {
     >
       <NavigationBar linkFontColor="white" />
       <Container
-        className="d-flex justify-content-center"
+        className="d-sm-flex justify-content-center"
         style={{ height: "600px", alignItems: " center" }}
       >
-        <Col>
+        <Row>
+        <Col xs={12} md={4}>
           <img
             src={LandingIllustration}
             alt="Illustration from Undraw on designers"
-            style={{ width: "350px" }}
+            style={{ width: "350px", maxWidth: "100%" }}
           />
         </Col>
-        <Col>
-          <div style={{ width: "600px" }}>
+        <Col xs={12} md={8}>
+          <div style={{ width: "600px", maxWidth: "100%" }}>
             <Row
               className="mb-2"
               style={{
@@ -44,26 +45,28 @@ export function index() {
             >
               Brown RISD Innovation Community
             </Row>
-            <Row style={{ textAlign: "left" }} className="mb-4">
+            <Row style={{ textAlign: "left" }} className="p-4">
               EMPHASIZING THE IMPORTANCE OF INNOVATION IN FIELDS BEYOND PURE
               TECHNOLOGY THROUGH CREATING AN INCLUSIVE SPACE FOR
               INTERDISCIPLINARY COLLABORATION AND LEARNING.
             </Row>
-            <Row className="mt-4">
+            <Row className="p-4">
               LEARN MORE
               <img
                 className="mt-2 ml-4"
                 src={Arrow}
                 alt="Arrow to learn more"
-                style={{ width: "350px" }}
+                style={{ width: "350px", maxWidth: "100%" }}
               />
             </Row>
           </div>
         </Col>
+        </Row>
       </Container>
       <Container
         className="mb-5 mt-5"
-        style={{ position: "relative", top: "-30px" }}
+        style={{overflow:"hidden"}}
+        // style={{ position: "relative", top: "-30px", overflow:"hidden"}}
       >
         <img
           src={Scissors}
@@ -77,13 +80,14 @@ export function index() {
             bottom: 0,
             right: "-10%",
             zIndex: 0,
-            overflow: "hidden",
           }}
         />
         <div style={{ borderStyle: "dashed" }}>
-          <Row style={{ height: "350px" }}>
+          <Row style={{ minHeight: "350px" }}>
             <Col
-              className="col-4"
+              xs={12}
+              md={4}
+              className="col-4 p-4"
               style={{
                 fontWeight: "bold",
                 fontSize: 60,
@@ -94,23 +98,29 @@ export function index() {
               Vision
             </Col>
             <Col
+              xs={12}
+              md={8}
               className="col-8"
               style={{ textAlign: "left", margin: "auto" }}
             >
+              <div className="p-4">
               A DYNAMIC SPACE WHERE ARTISTS, HISTORIANS, COMPUTER SCIENTISTS,
               DESIGNERS, AND EVERYONE IN BETWEEN CAN LEARN TOGETHER AND FROM
               EACH OTHER THROUGH OUR INTEGRATED CURRICULUM. WE FOCUS ON
               FOSTERING DIVERSE OPINIONS, LEARNING NEW SKILLS, AND HANDS ON
               COLLABORATION ON COLLEGE HILL AND BEYOND.
+              </div>
             </Col>
           </Row>
         </div>
       </Container>
       <Container className="pb-5">
         <div style={{ borderStyle: "dashed" }}>
-          <Row style={{ height: "350px" }}>
+          <Row style={{ minHeight: "350px" }}>
             <Col
-              className="col-4"
+              xs={12}
+              md={4}
+              className="col-4 p-4"
               style={{
                 fontSize: 60,
                 textTransform: "uppercase",
@@ -120,13 +130,14 @@ export function index() {
             >
               Values
             </Col>
-            <Col className="col-8" style={{ margin: "auto" }}>
+            <Col xs={12} md={8} className="col-8" style={{ margin: "auto" }}>
               <ul
                 style={{
                   listStyle: "none",
                   textAlign: "left",
                   paddingInlineStart: "0",
                 }}
+                className="p-4"
               >
                 <li>INCLUSIVE COMMUNITY</li>
                 <li>INTERSECTIONAL INNOVATION</li>

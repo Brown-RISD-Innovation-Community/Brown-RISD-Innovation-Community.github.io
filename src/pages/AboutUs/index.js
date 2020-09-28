@@ -38,7 +38,7 @@ const navStyle = {
 };
 
 const textStyle = {
-  fontSize: 48,
+  // fontSize: 48,
   fontWeight: "bold",
   color: "#0B43CB",
 };
@@ -59,9 +59,9 @@ export default function index() {
       <NavigationBar linkFontColor="white" />
       <Container className="pt-5 d-flex pb-5 ">
         <Row>
-        <Col xs={12} md={8} className="col-8">
+        <Col xs={12} md={8}>
           <Row >
-            <div style={textStyle}>OUR TEAM</div>
+            <h1 style={textStyle}>OUR TEAM</h1>
           </Row>
           <Row className="pt-3 pb-3">
             <div style={bodyStyle}>

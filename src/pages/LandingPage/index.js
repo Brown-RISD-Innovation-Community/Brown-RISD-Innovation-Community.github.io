@@ -68,7 +68,7 @@ export function index() {
         style={{overflow:"hidden"}}
         // style={{ position: "relative", top: "-30px", overflow:"hidden"}}
       >
-        <img
+        {/* <img
           src={Scissors}
           alt="Scissors for decoration"
           style={{
@@ -81,7 +81,7 @@ export function index() {
             right: "-10%",
             zIndex: 0,
           }}
-        />
+        /> */}
         <div style={{ borderStyle: "dashed" }}>
           <Row style={{ minHeight: "350px" }}>
             <Col

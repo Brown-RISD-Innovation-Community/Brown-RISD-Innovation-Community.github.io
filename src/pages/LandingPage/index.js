@@ -56,7 +56,7 @@ export function index() {
                 className="mt-2 ml-4"
                 src={Arrow}
                 alt="Arrow to learn more"
-                style={{ width: "350px", maxWidth: "100%" }}
+                style={{ width: "350px", maxWidth: "80%" }}
               />
             </Row>
           </div>

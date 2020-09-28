@@ -13,18 +13,19 @@ export default function index() {
     <div style={{ backgroundColor: "#1fd2bd", color: "black" }}>
       <NavigationBar linkFontColor="white" />
       <Container
-        className="d-flex justify-content-center mb-5 pb-0"
-        style={{ height: "500px", alignItems: " center" }}
+        className="d-sm-flex justify-content-center mb-5 mt-5 pb-0"
+        style={{ alignItems: " center" }}
       >
-        <Col>
+        <Row>
+        <Col xs={12} md={4}>
           <img
             src={CurriculumIllustration}
             alt="Illustration from Undraw on designers"
-            style={{ width: "350px" }}
+            style={{ width: "350px", maxWidth: "100%" }}
           />
         </Col>
-        <Col>
-          <div style={{ width: "600px" }}>
+        <Col xs={12} md={8}>
+          <div style={{ width: "600px", maxWidth: "100%" }}>
             <Row
               className="mb-2"
               style={{
@@ -39,7 +40,7 @@ export default function index() {
             </Row>
             <Row style={{ textAlign: "left" }} className="mb-4">
               <ul
-                className="p-0"
+                className="p-4"
                 style={{ fontSize: "18px", textTransform: "uppercase" }}
               >
                 <li>
@@ -52,21 +53,22 @@ export default function index() {
                 </li>
               </ul>
             </Row>
-            <Row className="mt-4" style={{ fontSize: "18px" }}>
+            <Row className="mt-4 p-4" style={{ fontSize: "18px" }}>
               LEARN MORE
               <img
                 className="mt-2 ml-4"
                 src={Arrow}
                 alt="Arrow to learn more"
-                style={{ width: "350px" }}
+                style={{ width: "350px", maxWidth: "80%" }}
               />
             </Row>
           </div>
         </Col>
+        </Row>
       </Container>
       <Container>
         <Row className="mt-0 pb-5 d-flex align-items-center">
-          <Col xs={4} className="d-flex justify-content-center">
+          <Col xs={12} md={4} className="d-flex justify-content-center">
             <div
               className="m-0"
               style={{
@@ -82,7 +84,7 @@ export default function index() {
             </div>
           </Col>
           <Col
-            xs={7}
+            xs={12} md={7}
             className="d-flex justify-content-left align-items-center"
           >
             <p
@@ -106,9 +108,24 @@ export default function index() {
         <br />
         <br />
         <Row className="mt-0 pb-5 d-flex align-items-center">
+        <Col xs={12} md={{ span: 4, order: 12 }} className="d-flex justify-content-center">
+            <div
+              className="m-0"
+              style={{
+                borderStyle: "dashed",
+                paddingTop: "72px",
+                width: "200px",
+                height: "200px",
+                borderRadius: "100%",
+                backgroundColor: "rgb(251,222,5)",
+              }}
+            >
+              <h5>DESIGN CHALLENGES</h5>
+            </div>
+          </Col>
           <Col
-            xs={7}
-            className="d-flex justify-content-left align-items-center offset-1"
+            xs={12} md={{ span: 7, order: 1, offset: 1 }}
+            className="d-flex justify-content-left align-items-center"
           >
             <p
               className="p-0 m-0"
@@ -128,26 +145,12 @@ export default function index() {
               design challenges.
             </p>
           </Col>
-          <Col xs={4} className="d-flex justify-content-center">
-            <div
-              className="m-0"
-              style={{
-                borderStyle: "dashed",
-                paddingTop: "72px",
-                width: "200px",
-                height: "200px",
-                borderRadius: "100%",
-                backgroundColor: "rgb(251,222,5)",
-              }}
-            >
-              <h5>DESIGN CHALLENGES</h5>
-            </div>
-          </Col>
+          
         </Row>
         <br />
         <br />
         <Row className="mt-0 pb-5 d-flex align-items-center">
-          <Col xs={4} className="d-flex justify-content-center">
+          <Col xs={12} md={4} className="d-flex justify-content-center">
             <div
               className="m-0"
               style={{
@@ -163,7 +166,7 @@ export default function index() {
             </div>
           </Col>
           <Col
-            xs={7}
+            xs={12} md={7}
             className="d-flex justify-content-left align-items-center"
           >
             <p
@@ -190,9 +193,24 @@ export default function index() {
         <br />
         <br />
         <Row className="mt-0 pb-5 d-flex align-items-center">
+        <Col xs={12} md={{ span: 4, order: 12 }} className="d-flex justify-content-center">
+            <div
+              className="m-0"
+              style={{
+                borderStyle: "dashed",
+                paddingTop: "85px",
+                width: "200px",
+                height: "200px",
+                borderRadius: "100%",
+                backgroundColor: "rgb(251,222,5)",
+              }}
+            >
+              <h5>MENTORSHIP</h5>
+            </div>
+          </Col>
           <Col
-            xs={7}
-            className="d-flex justify-content-left align-items-center offset-1"
+            xs={12} md={{ span: 7, order: 1, offset: 1 }}
+            className="d-flex justify-content-left align-items-center"
           >
             <p
               className="p-0 m-0"
@@ -209,21 +227,7 @@ export default function index() {
               connect mentees to other students in their network.
             </p>
           </Col>
-          <Col xs={4} className="d-flex justify-content-center">
-            <div
-              className="m-0"
-              style={{
-                borderStyle: "dashed",
-                paddingTop: "85px",
-                width: "200px",
-                height: "200px",
-                borderRadius: "100%",
-                backgroundColor: "rgb(251,222,5)",
-              }}
-            >
-              <h5>MENTORSHIP</h5>
-            </div>
-          </Col>
+          
         </Row>
         <br />
         <Row

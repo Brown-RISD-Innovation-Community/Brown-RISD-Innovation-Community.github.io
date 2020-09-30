@@ -16,14 +16,17 @@ export default function index() {
           CALENDAR
         </div>
         <Row>
-          <Col xs={6}>
+          <Col xs={12} md={6} >
             <div
               className="p-4"
               style={{
                 textAlign: "left",
                 borderStyle: "dashed",
                 height: "600px",
-                marginLeft: "-120px",
+                maxHeight: "70%",
+                // marginLeft: "-120px",
+                width: "700px",
+                maxWidth: "100%",
                 marginRight: "20px",
                 scrolling: "yes",
                 overflow: "scroll",
@@ -74,7 +77,7 @@ export default function index() {
               <p style={{ fontSize: "18px" }}>Coming Soon!</p>
             </div>
           </Col>
-          <Col xs={6}>
+          <Col xs={12} md={6}>
             <iframe
               src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FNew_York&amp;src=YnJvd24uZWR1X2owNjhuOGJxMzZtNG5vcTY0OG9yN2J0MzJnQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&amp;color=%237986CB"
               title="calendar"
@@ -82,7 +85,9 @@ export default function index() {
               style={{
                 border: "solid 1px #777",
                 width: "700px",
+                maxWidth: "100%",
                 height: "600px",
+                maxHeight: "70%",
                 frameBorder: "0",
                 scrolling: "no",
               }}

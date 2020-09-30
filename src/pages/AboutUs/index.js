@@ -21,12 +21,14 @@ import Malvika from "../../assets/headshots/malvika.jfif";
 
 // Illustration Import
 import TeamIllustration from "../../assets/team.png";
+import NavigationBar from "../../components/NavigationBar";
 
 import Navbar from "react-bootstrap/NavBar";
 import Nav from "react-bootstrap/Nav";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import Logo from "../../assets/new_logo.svg";
 import "./main.css";
+import { CloseButton } from "react-bootstrap";
 
 const navStyle = {
   fontFamily: "Arial",
@@ -36,7 +38,7 @@ const navStyle = {
 };
 
 const textStyle = {
-  fontSize: 48,
+  // fontSize: 48,
   fontWeight: "bold",
   color: "#0B43CB",
 };
@@ -54,52 +56,12 @@ export default function index() {
       className="pb-5"
       style={{ backgroundColor: "#FADD02", color: "#0B43CB" }}
     >
-      <div className="p-4" style={{ color: "white" }}>
-        <Navbar style={{ display: "flex" }} expand="lg">
-          <Navbar.Brand href="/" className="ml-5">
-            <img
-              style={{ width: "150px" }}
-              src={Logo}
-              alt="BRIC Default Logo"
-            />
-          </Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="ml-auto mr-15" style={navStyle}>
-              <NavDropdown
-                title="Curriculum"
-                id="nav-dropdown"
-                className="px-5"
-              >
-                <NavDropdown.Item href="/curriculum">
-                  About the Curriculum
-                </NavDropdown.Item>
-                <NavDropdown.Item href="/calendar">
-                  Event Calendar
-                </NavDropdown.Item>
-              </NavDropdown>
-              <Nav.Link
-                href="/about-us"
-                className="px-5"
-                style={{ color: "#0B43CB" }}
-              >
-                About Us
-              </Nav.Link>
-              <Nav.Link
-                href="/contact"
-                className="px-5"
-                style={{ color: "#0B43CB" }}
-              >
-                Contact
-              </Nav.Link>
-            </Nav>
-          </Navbar.Collapse>
-        </Navbar>
-      </div>
-      <Container className="pt-5 d-flex pb-5">
-        <Col className="col-8">
-          <Row>
-            <div style={textStyle}>OUR TEAM</div>
+      <NavigationBar linkFontColor="white" />
+      <Container className="pt-5 d-flex pb-5 ">
+        <Row>
+        <Col xs={12} md={8}>
+          <Row >
+            <h1 style={textStyle}>OUR TEAM</h1>
           </Row>
           <Row className="pt-3 pb-3">
             <div style={bodyStyle}>
@@ -120,55 +82,57 @@ export default function index() {
               className="mt-3 ml-4"
               src={Arrow}
               alt="Arrow to meet the team"
-              style={{ width: "300px" }}
+              style={{ width: "300px", maxWidth: "80%" }}
             />
           </Row>
         </Col>
-        <Col>
-          <img src={TeamIllustration} alt="Illustration for Team Page" />
+        <Col xs={12} md={4}>
+          <img src={TeamIllustration} alt="Illustration for Team Page"
+            style={{ width: "350px", maxWidth: "100%" }}/>
         </Col>
+        </Row>
       </Container>
-      <Container style={{ backgroundColor: "white", borderRadius: "25px" }}>
+      <Container style={{ backgroundColor: "white", borderRadius: "25px", maxWidth: "90%"}}>
         <Row className="pl-5 pt-3 pb-3" style={bodyStyle}>
           Co-Chairs
         </Row>
-        <Row className="pb-5">
-          <div className="pl-5">
+        <Row className="d-flex pb-5 justify-content-start">
+          <Col xs={12} md={3} className="">
             <img
               src={Ivan}
               alt="headshot of Ivan"
-              style={{ width: "175px", borderRadius: "50%" }}
+              style={{ width: "175px", maxWidth: "80%", borderRadius: "50%" }}
             />
             <div className="font-weight-bold pt-3">Ivan Zhao</div>
             <div>Brown '22</div>
             <div>APMA - CS</div>
-          </div>
+          </Col>
 
-          <div className="pl-5">
+          <Col xs={12} md={3} className="">
             <img
               src={Xinru}
               alt="headshot of Xinru"
-              style={{ width: "175px", borderRadius: "50%" }}
+              style={{ width: "175px", maxWidth: "80%", borderRadius: "50%" }}
             />
             <div className="font-weight-bold pt-3">Xinru Li</div>
             <div>Brown '22</div>
             <div>Music</div>
-          </div>
-          <div className="pl-5">
+          </Col>
+          <Col xs={12} md={3} className="">
             <img
               src={Aryan}
               alt="headshot of Aryan"
-              style={{ width: "175px", borderRadius: "50%" }}
+              style={{ width: "175px", maxWidth: "80%", borderRadius: "50%" }}
             />
             <div className="font-weight-bold pt-3">Aryan Srivastava</div>
             <div>Brown '22</div>
             <div>CS</div>
-          </div>
+          </Col>
         </Row>
       </Container>
       <Container
         className="mt-5 pb-5"
-        style={{ backgroundColor: "white", borderRadius: "25px" }}
+        style={{ backgroundColor: "white", borderRadius: "25px", maxWidth: "90%" }}
       >
         <Row className="pl-5 pt-3 pb-3" style={bodyStyle}>
           E-BOARD
@@ -177,37 +141,37 @@ export default function index() {
           Curriculum
         </Row>
         <Row>
-          <div className="pl-5">
+          <Col xs={12} md={3}>
             <img
               src={Niyoshi}
               alt="headshot of Niyoshi"
-              style={{ width: "175px", borderRadius: "50%" }}
+              style={{ width: "175px", maxWidth: "80%", borderRadius: "50%" }}
             />
             <div className="font-weight-bold pt-3">Niyoshi Parekh</div>
             <div>Brown '22</div>
             <div>Architecture CS</div>
-          </div>
+          </Col>
 
-          <div className="pl-5">
+          <Col xs={12} md={3}>
             <img
               src={Brie}
               alt="headshot of Brie"
-              style={{ width: "175px", borderRadius: "50%" }}
+              style={{ width: "175px", maxWidth: "80%", borderRadius: "50%" }}
             />
             <div className="font-weight-bold pt-3">Brie Rowey</div>
             <div>Brown '22</div>
             <div>Mechanical Engineering</div>
-          </div>
-          <div className="pl-5">
+          </Col>
+          <Col xs={12} md={3}>
             <img
               src={Audrey}
               alt="headshot of Audrey"
-              style={{ width: "175px", borderRadius: "50%" }}
+              style={{ width: "175px", maxWidth: "80%", borderRadius: "50%" }}
             />
             <div className="font-weight-bold pt-3">Audrey Kang</div>
             <div>RISD '22</div>
             <div>Interior Architecture</div>
-          </div>
+          </Col>
         </Row>
         <Row
           className="pl-5 pt-5 mb-3 font-weight-bold"
@@ -216,46 +180,46 @@ export default function index() {
           Marketing and Design
         </Row>
         <Row>
-          <div className="pl-5">
+          <Col xs={12} md={3}>
             <img
               src={Christine}
               alt="headshot of Christine"
-              style={{ width: "175px", borderRadius: "50%" }}
+              style={{ width: "175px", maxWidth: "80%", borderRadius: "50%" }}
             />
             <div className="font-weight-bold pt-3">Christine Lin</div>
             <div>Brown '21</div>
             <div>CS</div>
-          </div>
-          <div className="pl-5">
+          </Col>
+          <Col xs={12} md={3}>
             <img
               src={Kia}
               alt="headshot of Kia"
-              style={{ width: "175px", borderRadius: "50%" }}
+              style={{ width: "175px", maxWidth: "80%", borderRadius: "50%" }}
             />
             <div className="font-weight-bold pt-3">Kia Uusitalo</div>
             <div>Brown '23</div>
             <div>Organizational Studies</div>
-          </div>
-          <div className="pl-5">
+          </Col>
+          <Col xs={12} md={3}>
             <img
               src={Stephanie}
               alt="headshot of Stephanie"
-              style={{ width: "175px", borderRadius: "50%" }}
+              style={{ width: "175px", maxWidth: "80%", borderRadius: "50%" }}
             />
             <div className="font-weight-bold pt-3">Stephanie Park</div>
             <div>RISD '22</div>
             <div>Industrial Design</div>
-          </div>
-          <div className="pl-5">
+          </Col>
+          <Col xs={12} md={3}>
             <img
               src={Malvika}
               alt="headshot of Malvika"
-              style={{ width: "175px", borderRadius: "50%" }}
+              style={{ width: "175px", maxWidth: "80%", borderRadius: "50%" }}
             />
             <div className="font-weight-bold pt-3">Malvika Agarwal</div>
             <div>RISD '22</div>
             <div>Graphic Design</div>
-          </div>
+          </Col>
         </Row>
 
         {/* <Row>Operations</Row> */}

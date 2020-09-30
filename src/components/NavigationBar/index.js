@@ -16,7 +16,7 @@ export default function index({ linkFontColor }) {
   return (
     <div className="p-4" style={{ color: "white" }}>
       <Navbar style={{ display: "flex" }} expand="lg">
-        <Navbar.Brand href="/" className="ml-5">
+        <Navbar.Brand href="/" className="m-auto">
           <img style={{ width: "150px" }} src={Logo} alt="BRIC Default Logo" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />

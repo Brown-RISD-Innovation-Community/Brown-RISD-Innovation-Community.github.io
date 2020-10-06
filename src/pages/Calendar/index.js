@@ -7,6 +7,21 @@ import Col from "react-bootstrap/Col";
 // import Arrow from "../../assets/arrow.png";
 import NavigationBar from "../../components/NavigationBar";
 
+function Event(props) {
+  return (
+    <div className="mb-5">
+      <h5>{props.title}</h5>
+      <p style={{ fontSize: "18px" }}>
+        {!props.children ? "Coming soon!" : props.children}
+        {/* Explore different approaches to social innovation and the various
+        methods of changemaking across different discipline Zoom:{" "}
+        <a href="https://brown.zoom.us/j/9172022611" target="_blank">
+          here
+        </a> */}
+      </p>
+    </div>
+  );
+}
 export default function index() {
   return (
     <div style={{ backgroundColor: "#D3143A", color: "white" }}>
@@ -16,7 +31,7 @@ export default function index() {
           CALENDAR
         </div>
         <Row>
-          <Col xs={12} md={6} >
+          <Col xs={12} md={6}>
             <div
               className="p-4"
               style={{
@@ -33,20 +48,7 @@ export default function index() {
               }}
             >
               <h4>Fall 2020 Workshops</h4>
-              <br />
-
-              <h5>9/26: Social Innovation and Methods of Change 2-3PM EST</h5>
-              <p style={{ fontSize: "18px" }}>
-                Explore different approaches to social innovation and the
-                various methods of changemaking across different discipline
-                Zoom:{" "}
-                <a href="https://brown.zoom.us/j/9172022611" target="_blank">
-                  here
-                </a>
-              </p>
-              <br />
-              <h5>9/27: Ideation 2-3PM EST</h5>
-              <p style={{ fontSize: "18px" }}>
+              <Event title="9/27: Ideation 2-3PM EST">
                 Want to start a project but unsure of how to come up with an
                 idea? Come join our workshop on an introduction to ideation and
                 design thinking where you'll learn the basics of getting started{" "}
@@ -54,27 +56,13 @@ export default function index() {
                 <a href="https://brown.zoom.us/j/2362928657" target="_blank">
                   here
                 </a>
-              </p>
-              <br />
-              <h5>9/29: Data Analysis and Visualization (Coding) 7-8PM EST</h5>
-              <p style={{ fontSize: "18px" }}>Coming Soon! </p>
-              <br />
-              <h5>
-                9/29: Data Analysis and Visualization (non-coding) 7-8PM EST
-              </h5>
-              <p style={{ fontSize: "18px" }}>Coming Soon! </p>
-              <br />
-              <h5>10/6: UI Design 7-8PM EST</h5>
-              <p style={{ fontSize: "18px" }}>Coming Soon!</p>
-              <br />
-              <h5>10/6: Branding and Packaging 7-8PM EST</h5>
-              <p style={{ fontSize: "18px" }}>Coming Soon!</p>
-              <br />
-              <h5>10/13: Urban Art Installations 7-8PM EST</h5>
-              <p style={{ fontSize: "18px" }}>Coming Soon!</p>
-              <br />
-              <h5>10/13: Urban Planning 7-8PM EST</h5>
-              <p style={{ fontSize: "18px" }}>Coming Soon!</p>
+              </Event>
+              <Event title="9/29: Data Analysis and Visualization (Coding) 7-8PM EST" />
+              <Event title="9/29: Data Analysis and Visualization (non-coding) 7-8PM EST" />
+              <Event title="10/6: UI Design 7-8PM EST" />
+              <Event title="10/6: Branding and Packaging 7-8PM EST" />
+              <Event title="10/13: Urban Art Installations 7-8PM EST" />
+              <Event title="10/13: Urban Planning 7-8PM EST" />
             </div>
           </Col>
           <Col xs={12} md={6}>

@@ -30,6 +30,7 @@ export default function index({ linkFontColor }) {
               <NavDropdown.Item href="/curriculum">
                 About the Curriculum
               </NavDropdown.Item>
+              <NavDropdown.Item href="/projects">Projects</NavDropdown.Item>
               <NavDropdown.Item href="/calendar">
                 Event Calendar
               </NavDropdown.Item>

@@ -8,6 +8,7 @@ import AboutUs from "./pages/AboutUs";
 import Calendar from "./pages/Calendar";
 import Curriculum from "./pages/Curriculum";
 import Contact from "./pages/Contact";
+import Projects from "./pages/Projects";
 import Footer from "./components/Footer";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
@@ -21,6 +22,7 @@ function App() {
           <Route path="/contact" component={Contact} />
           <Route path="/calendar" component={Calendar} />
           <Route path="/curriculum" component={Curriculum} />
+          <Route path="/Projects" component={Projects} />
           <Route path="/" component={LandingPage} />
         </Switch>
       </Router>

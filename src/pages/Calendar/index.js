@@ -16,7 +16,7 @@ export default function index() {
           CALENDAR
         </div>
         <Row>
-          <Col xs={12} md={6} >
+          <Col xs={12} md={6}>
             <div
               className="p-4"
               style={{
@@ -40,7 +40,11 @@ export default function index() {
                 Explore different approaches to social innovation and the
                 various methods of changemaking across different discipline
                 Zoom:{" "}
-                <a href="https://brown.zoom.us/j/9172022611" target="_blank">
+                <a
+                  href="https://brown.zoom.us/j/9172022611"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   here
                 </a>
               </p>
@@ -51,7 +55,11 @@ export default function index() {
                 idea? Come join our workshop on an introduction to ideation and
                 design thinking where you'll learn the basics of getting started{" "}
                 Zoom:{" "}
-                <a href="https://brown.zoom.us/j/2362928657" target="_blank">
+                <a
+                  href="https://brown.zoom.us/j/2362928657"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   here
                 </a>
               </p>
@@ -93,18 +101,6 @@ export default function index() {
               }}
             ></iframe>
           </Col>
-        </Row>
-      </Container>
-      <Container className="pb-5">
-        <Row
-          className="m-4"
-          style={{ fontSize: "48px", textDecoration: "underline" }}
-        >
-          Upcoming Events
-        </Row>
-        <Row className="ml-4" style={{ fontSize: "18px" }}>
-          None for now, stay tuned though!
-          {/* Take the events and map it to an event with a flex justification of space around */}
         </Row>
       </Container>
     </div>

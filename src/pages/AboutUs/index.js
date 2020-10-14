@@ -3,6 +3,8 @@ import React, { useState } from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import Modal from "react-bootstrap/Modal";
+import Button from "react-bootstrap/Button";
 import Arrow from "../../assets/arrow.svg";
 
 // Co-chairs Headshots
@@ -52,32 +54,47 @@ const bodyStyle = {
 
 function Profile(props) {
   return (
-    <Col
-      onMouseEnter={() => props.set(props.name)}
-      onMouseLeave={() => props.set("")}
-      xs={12}
-      md={3}
-      className=""
-    >
-      {props.show === props.name ? (
-        <p className="align-self-center">{props.bio}</p>
-      ) : (
-        <div>
-          <img
-            src={props.src}
-            alt={`headshot of ${props.name}`}
-            style={{ width: "175px", maxWidth: "80%", borderRadius: "50%" }}
-          />
-          <div className="font-weight-bold pt-3">{props.name}</div>
-          <div>{props.year}</div>
-          <div>{props.major}</div>
-        </div>
-      )}
+    <Col onClick={() => props.set(props)} xs={12} md={3} className="">
+      <div>
+        <img
+          src={props.src}
+          alt={`headshot of ${props.name}`}
+          style={{ width: "175px", maxWidth: "80%", borderRadius: "50%" }}
+        />
+        <div className="font-weight-bold pt-3">{props.name}</div>
+        <div>{props.year}</div>
+        <div>{props.major}</div>
+      </div>
     </Col>
   );
 }
+
+function VerticallyCenteredModal(props) {
+  return (
+    <Modal
+      {...props}
+      size="lg"
+      aria-labelledby="contained-modal-title-vcenter"
+      centered
+    >
+      <Modal.Header closeButton>
+        <Modal.Title id="contained-modal-title-vcenter">
+          {props.name}
+        </Modal.Title>
+      </Modal.Header>
+      <Modal.Body>
+        <h4>Centered Modal</h4>
+        <p>{props.bio}</p>
+      </Modal.Body>
+      <Modal.Footer>
+        <Button onClick={props.onHide}>Close</Button>
+      </Modal.Footer>
+    </Modal>
+  );
+}
+
 export default function Index() {
-  const [isShown, setIsShown] = useState("");
+  const [isShown, setIsShown] = useState({});
   return (
     <div
       className="pb-5"
@@ -122,6 +139,11 @@ export default function Index() {
           </Col>
         </Row>
       </Container>
+      <VerticallyCenteredModal
+        show={Object.keys(isShown).length != 0}
+        onHide={() => setIsShown({})}
+        {...isShown}
+      />
       <Container
         style={{
           backgroundColor: "white",

@@ -54,16 +54,24 @@ const bodyStyle = {
 
 function Profile(props) {
   return (
-    <Col onClick={() => props.set(props)} xs={12} md={3} className="">
-      <div>
-        <img
-          src={props.src}
-          alt={`headshot of ${props.name}`}
-          style={{ width: "175px", maxWidth: "80%", borderRadius: "50%" }}
-        />
-        <div className="font-weight-bold pt-3">{props.name}</div>
-        <div>{props.year}</div>
-        <div>{props.major}</div>
+    <Col
+      className="profile"
+      onClick={() => props.set(props)}
+      xs={12}
+      md={3}
+      className=""
+    >
+      <div style={{ width: "100%" }}>
+        <div className="profile py-5">
+          <img
+            src={props.src}
+            alt={`headshot of ${props.name}`}
+            style={{ width: "175px", maxWidth: "80%", borderRadius: "50%" }}
+          />
+          <div className="font-weight-bold pt-3">{props.name}</div>
+          <div>{props.year}</div>
+          <div>{props.major}</div>
+        </div>
       </div>
     </Col>
   );
@@ -83,7 +91,7 @@ function VerticallyCenteredModal(props) {
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        <h4>Centered Modal</h4>
+        {/* <h4>Centered Modal</h4> */}
         <p>{props.bio}</p>
       </Modal.Body>
       <Modal.Footer>
@@ -151,7 +159,7 @@ export default function Index() {
           maxWidth: "90%",
         }}
       >
-        <Row className="pl-5 pt-3 pb-3" style={bodyStyle}>
+        <Row className="pl-5 py-3" style={bodyStyle}>
           Co-Chairs
         </Row>
         <Row className="d-flex pb-5 justify-content-start">
@@ -162,7 +170,7 @@ export default function Index() {
             src={Ivan}
             year="Brown '22"
             major="APMA - CS"
-            bio="Insert bio here ?"
+            bio="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada sollicitudin augue, sit amet egestas eros malesuada varius. Ut eu enim sed urna ultricies condimentum in sit amet metus. Maecenas ipsum ex, luctus et cursus id, rhoncus vitae libero. Pellentesque venenatis facilisis est. Maecenas et dictum enim. Etiam pharetra eleifend velit, vel tempor ipsum scelerisque sit amet. Quisque congue quam purus, id vestibulum quam suscipit in. Donec a egestas quam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas nibh augue, congue sit amet risus eu, ullamcorper luctus lectus. Ut sit amet luctus ipsum. Curabitur placerat nisl sapien, id ornare arcu rutrum eu. Curabitur vitae nibh eget est viverra tempor a et libero. Nam massa mauris, egestas non placerat dignissim, vehicula vel erat. Curabitur at convallis tortor, ac laoreet diam. Mauris venenatis at lorem at semper. Aenean turpis nisl, efficitur quis lorem bibendum, luctus maximus sem. Nam scelerisque elementum velit, sed vestibulum ligula varius vel. Fusce at lobortis est, placerat aliquet odio."
           />
           <Profile
             set={setIsShown}
@@ -171,7 +179,7 @@ export default function Index() {
             src={Xinru}
             year="Brown '22"
             major="Music"
-            bio="Insert bio here ?"
+            bio="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada sollicitudin augue, sit amet egestas eros malesuada varius. Ut eu enim sed urna ultricies condimentum in sit amet metus. Maecenas ipsum ex, luctus et cursus id, rhoncus vitae libero. Pellentesque venenatis facilisis est. Maecenas et dictum enim. Etiam pharetra eleifend velit, vel tempor ipsum scelerisque sit amet. Quisque congue quam purus, id vestibulum quam suscipit in. Donec a egestas quam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas nibh augue, congue sit amet risus eu, ullamcorper luctus lectus. Ut sit amet luctus ipsum. Curabitur placerat nisl sapien, id ornare arcu rutrum eu. Curabitur vitae nibh eget est viverra tempor a et libero. Nam massa mauris, egestas non placerat dignissim, vehicula vel erat. Curabitur at convallis tortor, ac laoreet diam. Mauris venenatis at lorem at semper. Aenean turpis nisl, efficitur quis lorem bibendum, luctus maximus sem. Nam scelerisque elementum velit, sed vestibulum ligula varius vel. Fusce at lobortis est, placerat aliquet odio."
           />
           <Profile
             set={setIsShown}
@@ -180,7 +188,7 @@ export default function Index() {
             src={Aryan}
             year="Brown '22"
             major="CS"
-            bio="Insert bio here ?"
+            bio="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada sollicitudin augue, sit amet egestas eros malesuada varius. Ut eu enim sed urna ultricies condimentum in sit amet metus. Maecenas ipsum ex, luctus et cursus id, rhoncus vitae libero. Pellentesque venenatis facilisis est. Maecenas et dictum enim. Etiam pharetra eleifend velit, vel tempor ipsum scelerisque sit amet. Quisque congue quam purus, id vestibulum quam suscipit in. Donec a egestas quam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas nibh augue, congue sit amet risus eu, ullamcorper luctus lectus. Ut sit amet luctus ipsum. Curabitur placerat nisl sapien, id ornare arcu rutrum eu. Curabitur vitae nibh eget est viverra tempor a et libero. Nam massa mauris, egestas non placerat dignissim, vehicula vel erat. Curabitur at convallis tortor, ac laoreet diam. Mauris venenatis at lorem at semper. Aenean turpis nisl, efficitur quis lorem bibendum, luctus maximus sem. Nam scelerisque elementum velit, sed vestibulum ligula varius vel. Fusce at lobortis est, placerat aliquet odio."
           />
         </Row>
       </Container>
@@ -206,7 +214,7 @@ export default function Index() {
             src={Niyoshi}
             year="Brown '22"
             major="Architecture CS"
-            bio="Insert bio here ?"
+            bio="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada sollicitudin augue, sit amet egestas eros malesuada varius. Ut eu enim sed urna ultricies condimentum in sit amet metus. Maecenas ipsum ex, luctus et cursus id, rhoncus vitae libero. Pellentesque venenatis facilisis est. Maecenas et dictum enim. Etiam pharetra eleifend velit, vel tempor ipsum scelerisque sit amet. Quisque congue quam purus, id vestibulum quam suscipit in. Donec a egestas quam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas nibh augue, congue sit amet risus eu, ullamcorper luctus lectus. Ut sit amet luctus ipsum. Curabitur placerat nisl sapien, id ornare arcu rutrum eu. Curabitur vitae nibh eget est viverra tempor a et libero. Nam massa mauris, egestas non placerat dignissim, vehicula vel erat. Curabitur at convallis tortor, ac laoreet diam. Mauris venenatis at lorem at semper. Aenean turpis nisl, efficitur quis lorem bibendum, luctus maximus sem. Nam scelerisque elementum velit, sed vestibulum ligula varius vel. Fusce at lobortis est, placerat aliquet odio."
           />
           <Profile
             set={setIsShown}
@@ -215,7 +223,7 @@ export default function Index() {
             src={Brie}
             year="Brown '22"
             major="Mechanical Engineering"
-            bio="Insert bio here ?"
+            bio="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada sollicitudin augue, sit amet egestas eros malesuada varius. Ut eu enim sed urna ultricies condimentum in sit amet metus. Maecenas ipsum ex, luctus et cursus id, rhoncus vitae libero. Pellentesque venenatis facilisis est. Maecenas et dictum enim. Etiam pharetra eleifend velit, vel tempor ipsum scelerisque sit amet. Quisque congue quam purus, id vestibulum quam suscipit in. Donec a egestas quam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas nibh augue, congue sit amet risus eu, ullamcorper luctus lectus. Ut sit amet luctus ipsum. Curabitur placerat nisl sapien, id ornare arcu rutrum eu. Curabitur vitae nibh eget est viverra tempor a et libero. Nam massa mauris, egestas non placerat dignissim, vehicula vel erat. Curabitur at convallis tortor, ac laoreet diam. Mauris venenatis at lorem at semper. Aenean turpis nisl, efficitur quis lorem bibendum, luctus maximus sem. Nam scelerisque elementum velit, sed vestibulum ligula varius vel. Fusce at lobortis est, placerat aliquet odio."
           />
           <Profile
             set={setIsShown}
@@ -224,7 +232,7 @@ export default function Index() {
             src={Audrey}
             year="RISD '22"
             major="Interior Architecture"
-            bio="Insert bio here ?"
+            bio="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada sollicitudin augue, sit amet egestas eros malesuada varius. Ut eu enim sed urna ultricies condimentum in sit amet metus. Maecenas ipsum ex, luctus et cursus id, rhoncus vitae libero. Pellentesque venenatis facilisis est. Maecenas et dictum enim. Etiam pharetra eleifend velit, vel tempor ipsum scelerisque sit amet. Quisque congue quam purus, id vestibulum quam suscipit in. Donec a egestas quam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas nibh augue, congue sit amet risus eu, ullamcorper luctus lectus. Ut sit amet luctus ipsum. Curabitur placerat nisl sapien, id ornare arcu rutrum eu. Curabitur vitae nibh eget est viverra tempor a et libero. Nam massa mauris, egestas non placerat dignissim, vehicula vel erat. Curabitur at convallis tortor, ac laoreet diam. Mauris venenatis at lorem at semper. Aenean turpis nisl, efficitur quis lorem bibendum, luctus maximus sem. Nam scelerisque elementum velit, sed vestibulum ligula varius vel. Fusce at lobortis est, placerat aliquet odio."
           />
         </Row>
         <Row
@@ -241,7 +249,7 @@ export default function Index() {
             src={Christine}
             year="Brown '21"
             major="CS"
-            bio="Insert bio here ?"
+            bio="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada sollicitudin augue, sit amet egestas eros malesuada varius. Ut eu enim sed urna ultricies condimentum in sit amet metus. Maecenas ipsum ex, luctus et cursus id, rhoncus vitae libero. Pellentesque venenatis facilisis est. Maecenas et dictum enim. Etiam pharetra eleifend velit, vel tempor ipsum scelerisque sit amet. Quisque congue quam purus, id vestibulum quam suscipit in. Donec a egestas quam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas nibh augue, congue sit amet risus eu, ullamcorper luctus lectus. Ut sit amet luctus ipsum. Curabitur placerat nisl sapien, id ornare arcu rutrum eu. Curabitur vitae nibh eget est viverra tempor a et libero. Nam massa mauris, egestas non placerat dignissim, vehicula vel erat. Curabitur at convallis tortor, ac laoreet diam. Mauris venenatis at lorem at semper. Aenean turpis nisl, efficitur quis lorem bibendum, luctus maximus sem. Nam scelerisque elementum velit, sed vestibulum ligula varius vel. Fusce at lobortis est, placerat aliquet odio."
           />
           <Profile
             set={setIsShown}
@@ -250,7 +258,7 @@ export default function Index() {
             src={Kia}
             year="Brown '23"
             major="Organizational Studies"
-            bio="Insert bio here ?"
+            bio="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada sollicitudin augue, sit amet egestas eros malesuada varius. Ut eu enim sed urna ultricies condimentum in sit amet metus. Maecenas ipsum ex, luctus et cursus id, rhoncus vitae libero. Pellentesque venenatis facilisis est. Maecenas et dictum enim. Etiam pharetra eleifend velit, vel tempor ipsum scelerisque sit amet. Quisque congue quam purus, id vestibulum quam suscipit in. Donec a egestas quam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas nibh augue, congue sit amet risus eu, ullamcorper luctus lectus. Ut sit amet luctus ipsum. Curabitur placerat nisl sapien, id ornare arcu rutrum eu. Curabitur vitae nibh eget est viverra tempor a et libero. Nam massa mauris, egestas non placerat dignissim, vehicula vel erat. Curabitur at convallis tortor, ac laoreet diam. Mauris venenatis at lorem at semper. Aenean turpis nisl, efficitur quis lorem bibendum, luctus maximus sem. Nam scelerisque elementum velit, sed vestibulum ligula varius vel. Fusce at lobortis est, placerat aliquet odio."
           />
           <Profile
             set={setIsShown}
@@ -259,7 +267,7 @@ export default function Index() {
             src={Stephanie}
             year="RISD '22"
             major="Industrial Design"
-            bio="Insert bio here ?"
+            bio="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada sollicitudin augue, sit amet egestas eros malesuada varius. Ut eu enim sed urna ultricies condimentum in sit amet metus. Maecenas ipsum ex, luctus et cursus id, rhoncus vitae libero. Pellentesque venenatis facilisis est. Maecenas et dictum enim. Etiam pharetra eleifend velit, vel tempor ipsum scelerisque sit amet. Quisque congue quam purus, id vestibulum quam suscipit in. Donec a egestas quam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas nibh augue, congue sit amet risus eu, ullamcorper luctus lectus. Ut sit amet luctus ipsum. Curabitur placerat nisl sapien, id ornare arcu rutrum eu. Curabitur vitae nibh eget est viverra tempor a et libero. Nam massa mauris, egestas non placerat dignissim, vehicula vel erat. Curabitur at convallis tortor, ac laoreet diam. Mauris venenatis at lorem at semper. Aenean turpis nisl, efficitur quis lorem bibendum, luctus maximus sem. Nam scelerisque elementum velit, sed vestibulum ligula varius vel. Fusce at lobortis est, placerat aliquet odio."
           />
           <Profile
             set={setIsShown}
@@ -268,7 +276,7 @@ export default function Index() {
             src={Malvika}
             year="RISD '22"
             major="Graphic Design"
-            bio="Insert bio here ?"
+            bio="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada sollicitudin augue, sit amet egestas eros malesuada varius. Ut eu enim sed urna ultricies condimentum in sit amet metus. Maecenas ipsum ex, luctus et cursus id, rhoncus vitae libero. Pellentesque venenatis facilisis est. Maecenas et dictum enim. Etiam pharetra eleifend velit, vel tempor ipsum scelerisque sit amet. Quisque congue quam purus, id vestibulum quam suscipit in. Donec a egestas quam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas nibh augue, congue sit amet risus eu, ullamcorper luctus lectus. Ut sit amet luctus ipsum. Curabitur placerat nisl sapien, id ornare arcu rutrum eu. Curabitur vitae nibh eget est viverra tempor a et libero. Nam massa mauris, egestas non placerat dignissim, vehicula vel erat. Curabitur at convallis tortor, ac laoreet diam. Mauris venenatis at lorem at semper. Aenean turpis nisl, efficitur quis lorem bibendum, luctus maximus sem. Nam scelerisque elementum velit, sed vestibulum ligula varius vel. Fusce at lobortis est, placerat aliquet odio."
           />
         </Row>
 

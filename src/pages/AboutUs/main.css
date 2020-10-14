@@ -1,3 +1,14 @@
 #nav-dropdown {
   color: #0b43cb;
 }
+
+.profile {
+  box-shadow: 0px 0px 0px 1px #0B43CB;
+  border-radius: 10px;
+  transition: all 0.2s ease;
+}
+
+.profile:hover {
+  box-shadow: 0px 0px 0px 3px #0B43CB;
+  background-color: lightyellow;
+}

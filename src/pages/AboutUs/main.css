@@ -12,3 +12,8 @@
   box-shadow: 0px 0px 0px 3px #0B43CB;
   background-color: lightyellow;
 }
+
+.profile-row {
+  margin: 0 auto;
+  max-width: 95%
+}

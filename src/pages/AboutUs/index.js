@@ -59,7 +59,7 @@ function Profile(props) {
       onClick={() => props.set(props)}
       xs={12}
       md={3}
-      className=""
+      className="my-2"
     >
       <div style={{ width: "100%" }}>
         <div className="profile py-5">
@@ -112,11 +112,13 @@ export default function Index() {
       <Container className="pt-5 d-flex pb-5 ">
         <Row>
           <Col xs={12} md={8}>
-            <Row>
-              <h1 style={textStyle}>OUR TEAM</h1>
+            <Row className="pl-0 pl-md-3 pl-lg-4">
+              <h1 className="mx-auto mx-md-0" style={textStyle}>
+                OUR TEAM
+              </h1>
             </Row>
-            <Row className="pt-3 pb-3">
-              <div style={bodyStyle}>
+            <Row className="pt-3 pb-3" style={bodyStyle}>
+              <div className="profile-row" style={{ overflowWrap: "anywhere" }}>
                 BRIC BRINGS TOGETHER STUDENTS FROM{" "}
                 <bdi style={{ textDecoration: "underline" }}>
                   BROWN UNIVERSITY
@@ -159,10 +161,14 @@ export default function Index() {
           maxWidth: "90%",
         }}
       >
-        <Row className="pl-5 py-3" style={bodyStyle}>
-          Co-Chairs
+        <Row
+          className="mx-auto mx-md-0 pl-0 pl-md-3 pl-lg-4 py-3"
+          style={bodyStyle}
+        >
+          <span className="mx-auto mx-md-0">Co-Chairs</span>
         </Row>
-        <Row className="d-flex pb-5 justify-content-start">
+
+        <Row className="d-flex pb-5 justify-content-start profile-row">
           <Profile
             set={setIsShown}
             show={isShown}
@@ -200,13 +206,19 @@ export default function Index() {
           maxWidth: "90%",
         }}
       >
-        <Row className="pl-5 pt-3 pb-3" style={bodyStyle}>
-          E-BOARD
+        <Row
+          className="mx-auto mx-md-0 pl-0 pl-md-3 pl-lg-4 pt-4 pb-3"
+          style={bodyStyle}
+        >
+          <span className="mx-auto mx-md-0">E-BOARD</span>
         </Row>
-        <Row className="pl-5 mb-3 font-weight-bold" style={{ fontSize: 24 }}>
-          Curriculum
+        <Row
+          className="mx-auto mx-md-0 pl-0 pl-md-3 pl-lg-4 mb-3 font-weight-bold"
+          style={{ fontSize: 24 }}
+        >
+          <span className="mx-auto mx-md-0">Curriculum</span>
         </Row>
-        <Row>
+        <Row className="profile-row">
           <Profile
             set={setIsShown}
             show={isShown}
@@ -236,12 +248,12 @@ export default function Index() {
           />
         </Row>
         <Row
-          className="pl-5 pt-5 mb-3 font-weight-bold"
+          className="mx-auto mx-md-0 pl-0 pl-md-3 pl-lg-4 pt-5 mb-3 font-weight-bold"
           style={{ fontSize: 24 }}
         >
-          Marketing and Design
+          <span className="mx-auto mx-md-0">Marketing and Design</span>
         </Row>
-        <Row>
+        <Row className="profile-row">
           <Profile
             set={setIsShown}
             show={isShown}

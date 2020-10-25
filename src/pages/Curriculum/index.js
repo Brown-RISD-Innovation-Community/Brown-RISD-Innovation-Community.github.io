@@ -34,7 +34,7 @@ function CircleRow(props) {
       <Col
         xs={12}
         md={7}
-        className="d-flex justify-content-left align-items-center"
+        className="mt-4 mt-sm-0 d-flex justify-content-left align-items-center"
       >
         {props.children}
       </Col>
@@ -55,7 +55,7 @@ function CircleRowReverse(props) {
       <Col
         xs={12}
         md={{ span: 7, order: 1, offset: 1 }}
-        className="d-flex justify-content-left align-items-center"
+        className="mt-4 mt-sm-0 d-flex justify-content-left align-items-center"
       >
         {props.children}
       </Col>

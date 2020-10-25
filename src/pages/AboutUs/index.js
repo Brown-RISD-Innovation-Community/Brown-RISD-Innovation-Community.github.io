@@ -118,7 +118,7 @@ export default function Index() {
               </h1>
             </Row>
             <Row className="pt-3 pb-3" style={bodyStyle}>
-              <div className="profile-row" style={{ overflowWrap: "anywhere" }}>
+              <div className="heading-text">
                 BRIC BRINGS TOGETHER STUDENTS FROM{" "}
                 <bdi style={{ textDecoration: "underline" }}>
                   BROWN UNIVERSITY

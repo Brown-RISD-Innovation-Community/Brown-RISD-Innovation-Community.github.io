@@ -17,3 +17,9 @@
   margin: 0 auto;
   max-width: 95%
 }
+
+.heading-text {
+  margin: 0 auto;
+  max-width: 80%;
+  overflow-wrap: anywhere;
+}

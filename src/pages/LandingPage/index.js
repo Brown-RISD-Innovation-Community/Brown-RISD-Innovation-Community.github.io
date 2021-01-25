@@ -7,7 +7,7 @@ import Arrow from "../../assets/arrow.svg";
 import Scissors from "../../assets/scissors.svg";
 import NavigationBar from "../../components/NavigationBar";
 
-import LandingIllustration from "../../assets/landing.png";
+import LandingIllustration from "../../assets/landing1.png";
 
 export function index() {
     return (
@@ -28,11 +28,17 @@ export function index() {
                         <img
                             src={LandingIllustration}
                             alt="Illustration from Undraw on designers"
-                            style={{ width: "350px", maxWidth: "100%" }}
+                            style={{ width: "450px" }}
                         />
                     </Col>
                     <Col xs={12} md={8}>
-                        <div style={{ width: "600px", maxWidth: "100%" }}>
+                        <div
+                            style={{
+                                width: "600px",
+                                maxWidth: "100%",
+                                marginLeft: "12%",
+                            }}
+                        >
                             <Row
                                 className="mb-2"
                                 style={{

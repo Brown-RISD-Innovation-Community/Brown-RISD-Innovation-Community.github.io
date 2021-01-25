@@ -18,6 +18,7 @@ import Christine from "../../assets/headshots/christine.png";
 import Kia from "../../assets/headshots/kia.jpg";
 import Stephanie from "../../assets/headshots/stephanie.jfif";
 import Malvika from "../../assets/headshots/malvika.jfif";
+import Sorin from "../../assets/headshots/sorin.jpg";
 
 // Illustration Import
 import TeamIllustration from "../../assets/team.png";
@@ -32,6 +33,13 @@ const navStyle = {
     // color: "white",
 };
 
+const containerStyle = {
+    backgroundColor: "white",
+    borderRadius: "25px",
+    maxWidth: "90%",
+    boxShadow: "10px 10px",
+};
+
 const textStyle = {
     // fontSize: 48,
     fontWeight: "bold",
@@ -43,6 +51,15 @@ const bodyStyle = {
     fontWeight: "bold",
     color: "#0B43CB",
     textAlign: "left",
+};
+
+const photoStyle = {
+    width: "175px",
+    maxWidth: "80%",
+    borderRadius: "50%",
+    color: "black",
+    border: "1px solid",
+    boxShadow: "10px 10px",
 };
 
 export default function index() {
@@ -96,13 +113,7 @@ export default function index() {
                     </Col>
                 </Row>
             </Container>
-            <Container
-                style={{
-                    backgroundColor: "white",
-                    borderRadius: "25px",
-                    maxWidth: "90%",
-                }}
-            >
+            <Container style={containerStyle}>
                 <Row className="pl-5 pt-3 pb-3" style={bodyStyle}>
                     Co-Chairs
                 </Row>
@@ -111,11 +122,7 @@ export default function index() {
                         <img
                             src={Ivan}
                             alt="headshot of Ivan"
-                            style={{
-                                width: "175px",
-                                maxWidth: "80%",
-                                borderRadius: "50%",
-                            }}
+                            style={photoStyle}
                         />
                         <div className="font-weight-bold pt-3">Ivan Zhao</div>
                         <div>Brown '22</div>
@@ -126,11 +133,7 @@ export default function index() {
                         <img
                             src={Xinru}
                             alt="headshot of Xinru"
-                            style={{
-                                width: "175px",
-                                maxWidth: "80%",
-                                borderRadius: "50%",
-                            }}
+                            style={photoStyle}
                         />
                         <div className="font-weight-bold pt-3">Xinru Li</div>
                         <div>Brown '22</div>
@@ -140,11 +143,7 @@ export default function index() {
                         <img
                             src={Aryan}
                             alt="headshot of Aryan"
-                            style={{
-                                width: "175px",
-                                maxWidth: "80%",
-                                borderRadius: "50%",
-                            }}
+                            style={photoStyle}
                         />
                         <div className="font-weight-bold pt-3">
                             Aryan Srivastava
@@ -154,14 +153,7 @@ export default function index() {
                     </Col>
                 </Row>
             </Container>
-            <Container
-                className="mt-5 pb-5"
-                style={{
-                    backgroundColor: "white",
-                    borderRadius: "25px",
-                    maxWidth: "90%",
-                }}
-            >
+            <Container className="mt-5 pb-5" style={containerStyle}>
                 <Row className="pl-5 pt-3 pb-3" style={bodyStyle}>
                     E-BOARD
                 </Row>
@@ -176,11 +168,7 @@ export default function index() {
                         <img
                             src={Niyoshi}
                             alt="headshot of Niyoshi"
-                            style={{
-                                width: "175px",
-                                maxWidth: "80%",
-                                borderRadius: "50%",
-                            }}
+                            style={photoStyle}
                         />
                         <div className="font-weight-bold pt-3">
                             Niyoshi Parekh
@@ -193,11 +181,7 @@ export default function index() {
                         <img
                             src={Brie}
                             alt="headshot of Brie"
-                            style={{
-                                width: "175px",
-                                maxWidth: "80%",
-                                borderRadius: "50%",
-                            }}
+                            style={photoStyle}
                         />
                         <div className="font-weight-bold pt-3">Brie Rowey</div>
                         <div>Brown '22</div>
@@ -207,11 +191,7 @@ export default function index() {
                         <img
                             src={Audrey}
                             alt="headshot of Audrey"
-                            style={{
-                                width: "175px",
-                                maxWidth: "80%",
-                                borderRadius: "50%",
-                            }}
+                            style={photoStyle}
                         />
                         <div className="font-weight-bold pt-3">Audrey Kang</div>
                         <div>RISD '22</div>
@@ -229,11 +209,7 @@ export default function index() {
                         <img
                             src={Christine}
                             alt="headshot of Christine"
-                            style={{
-                                width: "175px",
-                                maxWidth: "80%",
-                                borderRadius: "50%",
-                            }}
+                            style={photoStyle}
                         />
                         <div className="font-weight-bold pt-3">
                             Christine Lin
@@ -245,11 +221,7 @@ export default function index() {
                         <img
                             src={Kia}
                             alt="headshot of Kia"
-                            style={{
-                                width: "175px",
-                                maxWidth: "80%",
-                                borderRadius: "50%",
-                            }}
+                            style={photoStyle}
                         />
                         <div className="font-weight-bold pt-3">
                             Kia Uusitalo
@@ -261,11 +233,7 @@ export default function index() {
                         <img
                             src={Stephanie}
                             alt="headshot of Stephanie"
-                            style={{
-                                width: "175px",
-                                maxWidth: "80%",
-                                borderRadius: "50%",
-                            }}
+                            style={photoStyle}
                         />
                         <div className="font-weight-bold pt-3">
                             Stephanie Park
@@ -277,11 +245,7 @@ export default function index() {
                         <img
                             src={Malvika}
                             alt="headshot of Malvika"
-                            style={{
-                                width: "175px",
-                                maxWidth: "80%",
-                                borderRadius: "50%",
-                            }}
+                            style={photoStyle}
                         />
                         <div className="font-weight-bold pt-3">
                             Malvika Agarwal
@@ -290,8 +254,24 @@ export default function index() {
                         <div>Graphic Design</div>
                     </Col>
                 </Row>
-
-                {/* <Row>Operations</Row> */}
+                <Row
+                    className="pl-5 pt-5 mb-3 font-weight-bold"
+                    style={{ fontSize: 24 }}
+                >
+                    Operations
+                </Row>
+                <Row>
+                    <Col xs={12} md={3}>
+                        <img
+                            src={Sorin}
+                            alt="headshot of Sorin"
+                            style={photoStyle}
+                        />
+                        <div className="font-weight-bold pt-3">Sorin Cho</div>
+                        <div>Brown '22</div>
+                        <div>CS-Econ</div>
+                    </Col>
+                </Row>
             </Container>
         </div>
     );

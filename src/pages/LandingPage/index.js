@@ -66,6 +66,7 @@ export function index() {
                 <a
                     href="https://forms.gle/mxG7jhgNd4zMRbpE6"
                     target="_blank"
+                    rel="noopener noreferrer"
                     style={{ color: "yellow" }}
                 >
                     E-board
@@ -74,31 +75,14 @@ export function index() {
                 <a
                     href="https://forms.gle/ghtGzG1omfq4kCwo7"
                     target="_blank"
+                    rel="noopener noreferrer"
                     style={{ color: "yellow" }}
                 >
                     cohorts
                 </a>{" "}
                 are open!
             </Container>
-            <Container
-                className="mb-5 mt-5"
-                style={{ overflow: "hidden" }}
-                // style={{ position: "relative", top: "-30px", overflow:"hidden"}}
-            >
-                {/* <img
-          src={Scissors}
-          alt="Scissors for decoration"
-          style={{
-            transform: "rotate(180deg)",
-            width: "15%",
-            position: "absolute",
-            top: "-150px",
-
-            bottom: 0,
-            right: "-10%",
-            zIndex: 0,
-          }}
-        /> */}
+            <Container className="mb-5 mt-5" style={{ overflow: "hidden" }}>
                 <div style={{ borderStyle: "dashed" }}>
                     <Row style={{ minHeight: "350px" }}>
                         <Col
@@ -118,7 +102,11 @@ export function index() {
                             xs={12}
                             md={8}
                             className="col-8"
-                            style={{ textAlign: "left", margin: "auto" }}
+                            style={{
+                                textAlign: "left",
+                                margin: "auto",
+                                letterSpacing: "1px",
+                            }}
                         >
                             <div className="p-4">
                                 A DYNAMIC SPACE WHERE ARTISTS, HISTORIANS,
@@ -160,6 +148,7 @@ export function index() {
                                     listStyle: "none",
                                     textAlign: "left",
                                     paddingInlineStart: "0",
+                                    letterSpacing: "1.5px",
                                 }}
                                 className="p-4"
                             >

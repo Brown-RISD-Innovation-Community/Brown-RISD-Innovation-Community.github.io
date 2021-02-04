@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
@@ -53,16 +53,27 @@ const bodyStyle = {
     textAlign: "left",
 };
 
-const photoStyle = {
-    width: "175px",
-    maxWidth: "80%",
-    borderRadius: "50%",
-    color: "black",
-    border: "1px solid",
-    boxShadow: "10px 10px",
-};
-
-export default function index() {
+function Profile(props) {
+    return (
+        <Col xs={12} md={3} className="">
+            <div>
+                <img
+                    src={props.src}
+                    alt={`headshot of ${props.name}`}
+                    style={{
+                        width: "175px",
+                        maxWidth: "80%",
+                        borderRadius: "50%",
+                    }}
+                />
+                <div className="font-weight-bold pt-3">{props.name}</div>
+                <div>{props.year}</div>
+                <div>{props.major}</div>
+            </div>
+        </Col>
+    );
+}
+export default function Index() {
     return (
         <div
             className="pb-5"
@@ -108,52 +119,50 @@ export default function index() {
                         <img
                             src={TeamIllustration}
                             alt="Illustration for Team Page"
-                            style={{ width: "450px" }}
+                            style={{ width: "350px", maxWidth: "100%" }}
                         />
                     </Col>
                 </Row>
             </Container>
-            <Container style={containerStyle}>
+            <Container
+                style={{
+                    backgroundColor: "white",
+                    borderRadius: "25px",
+                    maxWidth: "90%",
+                }}
+            >
                 <Row className="pl-5 pt-3 pb-3" style={bodyStyle}>
                     Co-Chairs
                 </Row>
                 <Row className="d-flex pb-5 justify-content-start">
-                    <Col xs={12} md={3} className="">
-                        <img
-                            src={Ivan}
-                            alt="headshot of Ivan"
-                            style={photoStyle}
-                        />
-                        <div className="font-weight-bold pt-3">Ivan Zhao</div>
-                        <div>Brown '22</div>
-                        <div>APMA - CS</div>
-                    </Col>
-
-                    <Col xs={12} md={3} className="">
-                        <img
-                            src={Xinru}
-                            alt="headshot of Xinru"
-                            style={photoStyle}
-                        />
-                        <div className="font-weight-bold pt-3">Xinru Li</div>
-                        <div>Brown '22</div>
-                        <div>Music</div>
-                    </Col>
-                    <Col xs={12} md={3} className="">
-                        <img
-                            src={Aryan}
-                            alt="headshot of Aryan"
-                            style={photoStyle}
-                        />
-                        <div className="font-weight-bold pt-3">
-                            Aryan Srivastava
-                        </div>
-                        <div>Brown '22</div>
-                        <div>CS</div>
-                    </Col>
+                    <Profile
+                        name="Ivan Zhao"
+                        src={Ivan}
+                        year="Brown '22"
+                        major="APMA - CS"
+                    />
+                    <Profile
+                        name="Xinru Li"
+                        src={Xinru}
+                        year="Brown '22"
+                        major="Music"
+                    />
+                    <Profile
+                        name="Aryan Srivastava"
+                        src={Aryan}
+                        year="Brown '22"
+                        major="CS"
+                    />
                 </Row>
             </Container>
-            <Container className="mt-5 pb-5" style={containerStyle}>
+            <Container
+                className="mt-5 pb-5"
+                style={{
+                    backgroundColor: "white",
+                    borderRadius: "25px",
+                    maxWidth: "90%",
+                }}
+            >
                 <Row className="pl-5 pt-3 pb-3" style={bodyStyle}>
                     E-BOARD
                 </Row>
@@ -164,39 +173,24 @@ export default function index() {
                     Curriculum
                 </Row>
                 <Row>
-                    <Col xs={12} md={3}>
-                        <img
-                            src={Niyoshi}
-                            alt="headshot of Niyoshi"
-                            style={photoStyle}
-                        />
-                        <div className="font-weight-bold pt-3">
-                            Niyoshi Parekh
-                        </div>
-                        <div>Brown '22</div>
-                        <div>Architecture CS</div>
-                    </Col>
-
-                    {/* <Col xs={12} md={3}>
-                        <img
-                            src={Brie}
-                            alt="headshot of Brie"
-                            style={photoStyle}
-                        />
-                        <div className="font-weight-bold pt-3">Brie Rowey</div>
-                        <div>Brown '22</div>
-                        <div>Mechanical Engineering</div>
-                    </Col> */}
-                    <Col xs={12} md={3}>
-                        <img
-                            src={Audrey}
-                            alt="headshot of Audrey"
-                            style={photoStyle}
-                        />
-                        <div className="font-weight-bold pt-3">Audrey Kang</div>
-                        <div>RISD '22</div>
-                        <div>Interior Architecture</div>
-                    </Col>
+                    <Profile
+                        name="Niyoshi Parekh"
+                        src={Niyoshi}
+                        year="Brown '22"
+                        major="Architecture CS"
+                    />
+                    {/* <Profile
+                        name="Brie Rowey"
+                        src={Brie}
+                        year="Brown '22"
+                        major="Mechanical Engineering"
+                    /> */}
+                    <Profile
+                        name="Audrey Kang"
+                        src={Audrey}
+                        year="RISD '22"
+                        major="Interior Architecture"
+                    />
                 </Row>
                 <Row
                     className="pl-5 pt-5 mb-3 font-weight-bold"
@@ -205,54 +199,30 @@ export default function index() {
                     Marketing and Design
                 </Row>
                 <Row>
-                    {/* <Col xs={12} md={3}>
-                        <img
-                            src={Christine}
-                            alt="headshot of Christine"
-                            style={photoStyle}
-                        />
-                        <div className="font-weight-bold pt-3">
-                            Christine Lin
-                        </div>
-                        <div>Brown '21</div>
-                        <div>CS</div>
-                    </Col> */}
-                    {/* <Col xs={12} md={3}>
-                        <img
-                            src={Kia}
-                            alt="headshot of Kia"
-                            style={photoStyle}
-                        />
-                        <div className="font-weight-bold pt-3">
-                            Kia Uusitalo
-                        </div>
-                        <div>Brown '23</div>
-                        <div>Organizational Studies</div>
-                    </Col> */}
-                    {/* <Col xs={12} md={3}>
-                        <img
-                            src={Stephanie}
-                            alt="headshot of Stephanie"
-                            style={photoStyle}
-                        />
-                        <div className="font-weight-bold pt-3">
-                            Stephanie Park
-                        </div>
-                        <div>RISD '22</div>
-                        <div>Industrial Design</div>
-                    </Col> */}
-                    <Col xs={12} md={3}>
-                        <img
-                            src={Malvika}
-                            alt="headshot of Malvika"
-                            style={photoStyle}
-                        />
-                        <div className="font-weight-bold pt-3">
-                            Malvika Agarwal
-                        </div>
-                        <div>RISD '22</div>
-                        <div>Graphic Design</div>
-                    </Col>
+                    {/* <Profile
+                        name="Christine Lin"
+                        src={Christine}
+                        year="Brown '21"
+                        major="CS"
+                    />
+                    <Profile
+                        name="Kia Uusitalo"
+                        src={Kia}
+                        year="Brown '23"
+                        major="Organizational Studies"
+                    />
+                    <Profile
+                        name="Stephanie Park"
+                        src={Stephanie}
+                        year="RISD '22"
+                        major="Industrial Design"
+                    /> */}
+                    <Profile
+                        name="Malvika Agarwal"
+                        src={Malvika}
+                        year="RISD '22"
+                        major="Graphic Design"
+                    />
                 </Row>
                 <Row
                     className="pl-5 pt-5 mb-3 font-weight-bold"
@@ -261,16 +231,12 @@ export default function index() {
                     Operations
                 </Row>
                 <Row>
-                    <Col xs={12} md={3}>
-                        <img
-                            src={Sorin}
-                            alt="headshot of Sorin"
-                            style={photoStyle}
-                        />
-                        <div className="font-weight-bold pt-3">Sorin Cho</div>
-                        <div>Brown '22</div>
-                        <div>CS-Econ</div>
-                    </Col>
+                    <Profile
+                        name="Sorin Cho"
+                        src={Sorin}
+                        year="Brown '22"
+                        major="CS-Econ"
+                    />
                 </Row>
             </Container>
         </div>

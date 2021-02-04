@@ -26,14 +26,6 @@ export default function index({ linkFontColor }) {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ml-auto mr-15" style={navStyle}>
-                        {/* <NavDropdown
-              title="Curriculum"
-              id="basic-nav-dropdown"
-              className="px-5"
-            >
-              <NavDropdown.Item href="/curriculum">
-                About the Curriculum
-              </NavDropdown.Item> */}
                         <Nav.Link
                             href="/calendar"
                             className="px-5"
@@ -41,7 +33,13 @@ export default function index({ linkFontColor }) {
                         >
                             Event Calendar
                         </Nav.Link>
-                        {/* </NavDropdown> */}
+                        <Nav.Link
+                            href="/projects"
+                            className="px-5"
+                            style={{ color: linkFontColor }}
+                        >
+                            Projects
+                        </Nav.Link>
                         <Nav.Link
                             href="/about-us"
                             className="px-5"

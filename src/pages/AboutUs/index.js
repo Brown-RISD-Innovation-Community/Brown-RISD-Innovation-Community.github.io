@@ -177,7 +177,7 @@ export default function index() {
                         <div>Architecture CS</div>
                     </Col>
 
-                    <Col xs={12} md={3}>
+                    {/* <Col xs={12} md={3}>
                         <img
                             src={Brie}
                             alt="headshot of Brie"
@@ -186,7 +186,7 @@ export default function index() {
                         <div className="font-weight-bold pt-3">Brie Rowey</div>
                         <div>Brown '22</div>
                         <div>Mechanical Engineering</div>
-                    </Col>
+                    </Col> */}
                     <Col xs={12} md={3}>
                         <img
                             src={Audrey}
@@ -205,7 +205,7 @@ export default function index() {
                     Marketing and Design
                 </Row>
                 <Row>
-                    <Col xs={12} md={3}>
+                    {/* <Col xs={12} md={3}>
                         <img
                             src={Christine}
                             alt="headshot of Christine"
@@ -216,8 +216,8 @@ export default function index() {
                         </div>
                         <div>Brown '21</div>
                         <div>CS</div>
-                    </Col>
-                    <Col xs={12} md={3}>
+                    </Col> */}
+                    {/* <Col xs={12} md={3}>
                         <img
                             src={Kia}
                             alt="headshot of Kia"
@@ -228,8 +228,8 @@ export default function index() {
                         </div>
                         <div>Brown '23</div>
                         <div>Organizational Studies</div>
-                    </Col>
-                    <Col xs={12} md={3}>
+                    </Col> */}
+                    {/* <Col xs={12} md={3}>
                         <img
                             src={Stephanie}
                             alt="headshot of Stephanie"
@@ -240,7 +240,7 @@ export default function index() {
                         </div>
                         <div>RISD '22</div>
                         <div>Industrial Design</div>
-                    </Col>
+                    </Col> */}
                     <Col xs={12} md={3}>
                         <img
                             src={Malvika}

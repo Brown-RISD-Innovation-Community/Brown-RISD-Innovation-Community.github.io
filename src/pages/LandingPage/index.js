@@ -3,8 +3,6 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Arrow from "../../assets/arrow.svg";
-import Scissors from "../../assets/scissors.svg";
 import NavigationBar from "../../components/NavigationBar";
 
 import LandingIllustration from "../../assets/landing1.png";
@@ -61,7 +59,7 @@ export function index() {
                     </Col>
                 </Row>
             </Container>
-            <Container style={{ fontSize: "32px" }}>
+            {/* <Container style={{ fontSize: "32px" }}>
                 Our applications for our spring{" "}
                 <a
                     href="https://forms.gle/mxG7jhgNd4zMRbpE6"
@@ -81,7 +79,7 @@ export function index() {
                     cohorts
                 </a>{" "}
                 are open!
-            </Container>
+            </Container> */}
             <Container className="mb-5 mt-5" style={{ overflow: "hidden" }}>
                 <div style={{ borderStyle: "dashed" }}>
                     <Row style={{ minHeight: "350px" }}>

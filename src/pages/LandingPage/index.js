@@ -80,15 +80,6 @@ export function index() {
                                 AN INCLUSIVE SPACE FOR INTERDISCIPLINARY
                                 COLLABORATION AND LEARNING.
                             </Row>
-                            <Row className="p-4">
-                                LEARN MORE
-                                <img
-                                    className="mt-2 ml-4"
-                                    src={Arrow}
-                                    alt="Arrow to learn more"
-                                    style={{ width: "350px", maxWidth: "80%" }}
-                                />
-                            </Row>
                         </div>
                     </Col>
                 </Row>

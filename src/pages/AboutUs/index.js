@@ -252,60 +252,6 @@ export default function Index() {
             bio="Insert bio here ?"
           />
         </Row>
-        <Row>
-          <Col xs={12} md={3}>
-            <img src={Brie} alt="headshot of Brie" style={photoStyle} />
-            <div className="font-weight-bold pt-3">Brie Rowey</div>
-            <div>Brown '22</div>
-            <div>Mechanical Engineering</div>
-          </Col>
-          <Col xs={12} md={3}>
-            <img src={Audrey} alt="headshot of Audrey" style={photoStyle} />
-            <div className="font-weight-bold pt-3">Audrey Kang</div>
-            <div>RISD '22</div>
-            <div>Interior Architecture</div>
-          </Col>
-        </Row>
-        <Row
-          className="pl-5 pt-5 mb-3 font-weight-bold"
-          style={{ fontSize: 24 }}
-        >
-          Marketing and Design
-        </Row>
-        <Row>
-          <Col xs={12} md={3}>
-            <img
-              src={Christine}
-              alt="headshot of Christine"
-              style={photoStyle}
-            />
-            <div className="font-weight-bold pt-3">Christine Lin</div>
-            <div>Brown '21</div>
-            <div>CS</div>
-          </Col>
-          <Col xs={12} md={3}>
-            <img src={Kia} alt="headshot of Kia" style={photoStyle} />
-            <div className="font-weight-bold pt-3">Kia Uusitalo</div>
-            <div>Brown '23</div>
-            <div>Organizational Studies</div>
-          </Col>
-          <Col xs={12} md={3}>
-            <img
-              src={Stephanie}
-              alt="headshot of Stephanie"
-              style={photoStyle}
-            />
-            <div className="font-weight-bold pt-3">Stephanie Park</div>
-            <div>RISD '22</div>
-            <div>Industrial Design</div>
-          </Col>
-          <Col xs={12} md={3}>
-            <img src={Malvika} alt="headshot of Malvika" style={photoStyle} />
-            <div className="font-weight-bold pt-3">Malvika Agarwal</div>
-            <div>RISD '22</div>
-            <div>Graphic Design</div>
-          </Col>
-        </Row>
         <Row
           className="pl-5 pt-5 mb-3 font-weight-bold"
           style={{ fontSize: 24 }}

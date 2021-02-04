@@ -55,32 +55,21 @@ const bodyStyle = {
 
 function Profile(props) {
   return (
-    <Col
-      onMouseEnter={() => props.set(props.name)}
-      onMouseLeave={() => props.set("")}
-      xs={12}
-      md={3}
-      className=""
-    >
-      {props.show === props.name ? (
-        <p className="align-self-center">{props.bio}</p>
-      ) : (
-        <div>
-          <img
-            src={props.src}
-            alt={`headshot of ${props.name}`}
-            style={{ width: "175px", maxWidth: "80%", borderRadius: "50%" }}
-          />
-          <div className="font-weight-bold pt-3">{props.name}</div>
-          <div>{props.year}</div>
-          <div>{props.major}</div>
-        </div>
-      )}
+    <Col xs={12} md={3} className="">
+      <div>
+        <img
+          src={props.src}
+          alt={`headshot of ${props.name}`}
+          style={{ width: "175px", maxWidth: "80%", borderRadius: "50%" }}
+        />
+        <div className="font-weight-bold pt-3">{props.name}</div>
+        <div>{props.year}</div>
+        <div>{props.major}</div>
+      </div>
     </Col>
   );
 }
 export default function Index() {
-  const [isShown, setIsShown] = useState("");
   return (
     <div
       className="pb-5"
@@ -137,31 +126,17 @@ export default function Index() {
         </Row>
         <Row className="d-flex pb-5 justify-content-start">
           <Profile
-            set={setIsShown}
-            show={isShown}
             name="Ivan Zhao"
             src={Ivan}
             year="Brown '22"
             major="APMA - CS"
-            bio="Insert bio here ?"
           />
+          <Profile name="Xinru Li" src={Xinru} year="Brown '22" major="Music" />
           <Profile
-            set={setIsShown}
-            show={isShown}
-            name="Xinru Li"
-            src={Xinru}
-            year="Brown '22"
-            major="Music"
-            bio="Insert bio here ?"
-          />
-          <Profile
-            set={setIsShown}
-            show={isShown}
             name="Aryan Srivastava"
             src={Aryan}
             year="Brown '22"
             major="CS"
-            bio="Insert bio here ?"
           />
         </Row>
       </Container>
@@ -181,31 +156,22 @@ export default function Index() {
         </Row>
         <Row>
           <Profile
-            set={setIsShown}
-            show={isShown}
             name="Niyoshi Parekh"
             src={Niyoshi}
             year="Brown '22"
             major="Architecture CS"
-            bio="Insert bio here ?"
           />
           <Profile
-            set={setIsShown}
-            show={isShown}
             name="Brie Rowey"
             src={Brie}
             year="Brown '22"
             major="Mechanical Engineering"
-            bio="Insert bio here ?"
           />
           <Profile
-            set={setIsShown}
-            show={isShown}
             name="Audrey Kang"
             src={Audrey}
             year="RISD '22"
             major="Interior Architecture"
-            bio="Insert bio here ?"
           />
         </Row>
         <Row
@@ -216,40 +182,28 @@ export default function Index() {
         </Row>
         <Row>
           <Profile
-            set={setIsShown}
-            show={isShown}
             name="Christine Lin"
             src={Christine}
             year="Brown '21"
             major="CS"
-            bio="Insert bio here ?"
           />
           <Profile
-            set={setIsShown}
-            show={isShown}
             name="Kia Uusitalo"
             src={Kia}
             year="Brown '23"
             major="Organizational Studies"
-            bio="Insert bio here ?"
           />
           <Profile
-            set={setIsShown}
-            show={isShown}
             name="Stephanie Park"
             src={Stephanie}
             year="RISD '22"
             major="Industrial Design"
-            bio="Insert bio here ?"
           />
           <Profile
-            set={setIsShown}
-            show={isShown}
             name="Malvika Agarwal"
             src={Malvika}
             year="RISD '22"
             major="Graphic Design"
-            bio="Insert bio here ?"
           />
         </Row>
         <Row
@@ -259,12 +213,12 @@ export default function Index() {
           Operations
         </Row>
         <Row>
-          <Col xs={12} md={3}>
-            <img src={Sorin} alt="headshot of Sorin" style={photoStyle} />
-            <div className="font-weight-bold pt-3">Sorin Cho</div>
-            <div>Brown '22</div>
-            <div>CS-Econ</div>
-          </Col>
+          <Profile
+            name="Sorin Cho"
+            src={Sorin}
+            year="Brown '22"
+            major="CS-Econ"
+          />
         </Row>
       </Container>
     </div>

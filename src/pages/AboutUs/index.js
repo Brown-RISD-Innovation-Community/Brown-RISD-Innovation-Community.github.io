@@ -17,6 +17,7 @@ import Malvika from "../../assets/headshots/malvika.jfif";
 import Sorin from "../../assets/headshots/sorin.jpg";
 import Gleb from "../../assets/headshots/gleb.jpg";
 import Carmen from "../../assets/headshots/carmen.png";
+import Theo from "../../assets/headshots/theo.png";
 
 // Illustration Import
 import TeamIllustration from "../../assets/team.png";
@@ -218,6 +219,12 @@ export default function Index() {
             src={Sorin}
             year="Brown '22"
             major="CS-Econ"
+          />
+          <Profile
+            name="Theodore LaBonte-Clark"
+            src={Theo}
+            year="Brown '23"
+            major="CS"
           />
         </Row>
       </Container>

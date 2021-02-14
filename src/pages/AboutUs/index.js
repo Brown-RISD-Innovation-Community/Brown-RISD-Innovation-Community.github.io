@@ -35,7 +35,7 @@ const bodyStyle = {
   fontSize: 32,
   fontWeight: "bold",
   color: "#0B43CB",
-  textAlign: "left",
+  textAlign: "right",
 };
 
 function Profile(props) {

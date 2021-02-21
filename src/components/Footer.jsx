@@ -1,9 +1,9 @@
 import React from "react";
 import { Container, Col, Row } from "react-bootstrap";
 
-import colorLogo from "../../assets/multicolor.png";
+import colorLogo from "../assets/multicolor.png";
 
-export default function index() {
+export default function Footer() {
   const getYear = () => {
     const date = new Date();
     return date.getFullYear();

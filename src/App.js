@@ -7,7 +7,7 @@ import Calendar from "./pages/Calendar";
 import Curriculum from "./pages/Curriculum";
 import Contact from "./pages/Contact";
 import Projects from "./pages/Projects";
-import Footer from "./components/Footer";
+import Footer from "./components/Footer.jsx";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 

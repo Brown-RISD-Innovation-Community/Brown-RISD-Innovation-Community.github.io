@@ -5,7 +5,7 @@ import Col from "react-bootstrap/Col";
 
 // import Col from "react-bootstrap/Col";
 import Arrow from "../../assets/arrow.svg";
-import NavigationBar from "../../components/NavigationBar";
+import NavigationBar from "../../components/NavigationBar.jsx";
 import CurriculumIllustration from "../../assets/curriculum.png";
 
 function Circle(props) {

@@ -2,7 +2,7 @@ import React from "react";
 
 import Navbar from "react-bootstrap/NavBar";
 import Nav from "react-bootstrap/Nav";
-import Logo from "../../assets/new_logo.svg";
+import Logo from "../assets/new_logo.svg";
 
 const navStyle = {
   fontFamily: "Arial",
@@ -11,7 +11,7 @@ const navStyle = {
   // color: "white",
 };
 
-export default function index({ linkFontColor }) {
+export default function NavigationBar({ linkFontColor }) {
   return (
     <div className="p-4" style={{ color: "white" }}>
       <Navbar style={{ display: "flex" }} expand="lg">

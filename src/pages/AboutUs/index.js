@@ -21,7 +21,7 @@ import Theo from "../../assets/headshots/theo.png";
 
 // Illustration Import
 import TeamIllustration from "../../assets/team.png";
-import NavigationBar from "../../components/NavigationBar";
+import NavigationBar from "../../components/NavigationBar.jsx";
 
 import "./main.css";
 

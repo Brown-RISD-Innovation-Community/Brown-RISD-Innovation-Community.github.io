@@ -6,7 +6,7 @@ import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
 import CardDeck from "react-bootstrap/CardDeck";
 
-import NavigationBar from "../../components/NavigationBar";
+import NavigationBar from "../../components/NavigationBar.jsx";
 
 import SaltyCaramel from "../../assets/projects/salty_caramel.png";
 import DormLight from "../../assets/projects/dorm_light.jpg";

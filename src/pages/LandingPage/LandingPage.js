@@ -3,61 +3,25 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import NavigationBar from "../../components/NavigationBar.jsx";
+import NavigationBar from "../../components/NavigationBar/NavigationBar";
 
 import LandingIllustration from "../../assets/landing1.png";
+import DottedBox from "./components/DottedBox/DottedBox";
+import styles from "./LandingPage.module.css";
 
-function DottedBox(props) {
+export default function LandingPage() {
   return (
-    <Container className="py-5">
-      <div style={{ borderStyle: "dashed" }}>
-        <Row style={{ minHeight: "350px" }}>
-          <Col
-            xs={12}
-            md={4}
-            className="col-4 p-4"
-            style={{
-              fontWeight: "bold",
-              fontSize: 60,
-              textTransform: "uppercase",
-              margin: "auto",
-            }}
-          >
-            {props.cardTitle}
-          </Col>
-          <Col
-            xs={12}
-            md={8}
-            className="col-8"
-            style={{ textAlign: "left", margin: "auto" }}
-          >
-            {props.children}
-          </Col>
-        </Row>
-      </div>
-    </Container>
-  );
-}
-export function index() {
-  return (
-    <div
-      style={{
-        backgroundColor: "#0A44CB",
-        color: "white",
-        height: "100%",
-      }}
-    >
+    <div className={styles.page}>
       <NavigationBar linkFontColor="white" />
       <Container
-        className="d-sm-flex justify-content-center"
-        style={{ height: "600px", alignItems: " center" }}
+        className={`d-sm-flex justify-content-center ${styles["top-container"]}`}
       >
         <Row>
           <Col xs={12} md={4}>
             <img
               src={LandingIllustration}
               alt="Illustration from Undraw on designers"
-              style={{ width: "350px", maxWidth: "100%" }}
+              className={styles["landing-img"]}
             />
           </Col>
           <Col xs={12} md={8}>
@@ -109,5 +73,3 @@ export function index() {
     </div>
   );
 }
-
-export default index;

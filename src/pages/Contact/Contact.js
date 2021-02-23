@@ -1,34 +1,15 @@
 import React from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import NavigationBar from "../../components/NavigationBar.jsx";
-// import colorLogo from "../../assets/";
-
-// Icon imports
+import NavigationBar from "../../components/NavigationBar/NavigationBar";
+import Link from "./components/Link/Link";
 import {
   AiFillFacebook,
   AiFillInstagram,
   AiFillLinkedin,
 } from "react-icons/ai";
 
-function Link(props) {
-  return (
-    <Col>
-      <h3>
-        <a
-          href={props.href}
-          target="_blank"
-          rel="noopener noreferrer"
-          style={{ color: "#0B43Cb" }}
-        >
-          {props.children}
-        </a>
-      </h3>
-    </Col>
-  );
-}
-export default function index() {
+export default function Contact() {
   return (
     <div style={{ backgroundColor: "#00BFA9", color: "#0B43CB" }}>
       <NavigationBar linkFontColor="white" />

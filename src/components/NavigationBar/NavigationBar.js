@@ -2,14 +2,8 @@ import React from "react";
 
 import Navbar from "react-bootstrap/NavBar";
 import Nav from "react-bootstrap/Nav";
-import Logo from "../assets/new_logo.svg";
-
-const navStyle = {
-  fontFamily: "Arial",
-  fontSize: 24,
-  textTransform: "uppercase",
-  // color: "white",
-};
+import Logo from "../../assets/new_logo.svg";
+import styles from "./NavigationBar.module.css";
 
 export default function NavigationBar({ linkFontColor }) {
   return (
@@ -20,7 +14,7 @@ export default function NavigationBar({ linkFontColor }) {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="ml-auto mr-15" style={navStyle}>
+          <Nav className={`ml-auto mr-15 ${styles["nav-style"]}`}>
             <Nav.Link
               href="/calendar"
               className="px-5"
@@ -55,11 +49,3 @@ export default function NavigationBar({ linkFontColor }) {
     </div>
   );
 }
-
-// <Nav.Link
-//   href="/calendar"
-//   className="px-5"
-//   style={{ color: linkFontColor }}
-// >
-//   Calendar
-// </Nav.Link>

@@ -1,0 +1,15 @@
+.page {
+  background-color: #0A44CB;
+  color: white;
+  height: 100%;
+}
+
+.top-container {
+  height: 600px;
+  align-items: center;
+}
+
+.landing-img {
+  width: 350px;
+  max-width: 100%
+}

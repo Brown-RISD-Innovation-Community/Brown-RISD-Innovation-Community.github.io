@@ -21,44 +21,11 @@ import Theo from "../../assets/headshots/theo.png";
 
 // Illustration Import
 import TeamIllustration from "../../assets/team.png";
-import NavigationBar from "../../components/NavigationBar";
+import NavigationBar from "../../components/NavigationBar/NavigationBar";
+import Profile from "./components/Profile/Profile";
+import styles from "./AboutUs.module.css";
 
-import "./main.css";
-
-const textStyle = {
-  // fontSize: 48,
-  fontWeight: "bold",
-  color: "#0B43CB",
-};
-
-const bodyStyle = {
-  fontSize: 32,
-  fontWeight: "bold",
-  color: "#0B43CB",
-  textAlign: "left",
-};
-
-function Profile(props) {
-  return (
-    <Col xs={12} md={3} className="">
-      <div>
-        <img
-          src={props.src}
-          alt={`headshot of ${props.name}`}
-          style={{
-            width: "175px",
-            maxWidth: "80%",
-            borderRadius: "50%",
-          }}
-        />
-        <div className="font-weight-bold pt-3">{props.name}</div>
-        <div>{props.year}</div>
-        <div>{props.major}</div>
-      </div>
-    </Col>
-  );
-}
-export default function Index() {
+export default function AboutUs() {
   return (
     <div
       className="pb-5"
@@ -69,10 +36,10 @@ export default function Index() {
         <Row>
           <Col xs={12} md={8}>
             <Row>
-              <h1 style={textStyle}>OUR TEAM</h1>
+              <h1 className={styles.header}>OUR TEAM</h1>
             </Row>
             <Row className="pt-3 pb-3">
-              <div style={bodyStyle}>
+              <div className={styles["header-text"]}>
                 BRIC BRINGS TOGETHER STUDENTS FROM{" "}
                 <bdi style={{ textDecoration: "underline" }}>
                   BROWN UNIVERSITY
@@ -110,7 +77,7 @@ export default function Index() {
           maxWidth: "90%",
         }}
       >
-        <Row className="pl-5 pt-3 pb-3" style={bodyStyle}>
+        <Row className={`pl-5 pt-3 pb-3 ${styles["team-header"]}`}>
           Co-Chairs
         </Row>
         <Row className="d-flex pb-5 justify-content-start">
@@ -137,9 +104,7 @@ export default function Index() {
           maxWidth: "90%",
         }}
       >
-        <Row className="pl-5 pt-3 pb-3" style={bodyStyle}>
-          E-BOARD
-        </Row>
+        <Row className={`pl-5 pt-3 pb-3 ${styles["team-header"]}`}>E-BOARD</Row>
         <Row className="pl-5 mb-3 font-weight-bold" style={{ fontSize: 24 }}>
           Curriculum
         </Row>
@@ -169,10 +134,7 @@ export default function Index() {
             major="BEO-Technology Management"
           />
         </Row>
-        <Row
-          className="pl-5 pt-5 mb-3 font-weight-bold"
-          style={{ fontSize: 24 }}
-        >
+        <Row className={`pl-5 pt-3 pb-3 ${styles["team-header"]}`}>
           Marketing and Design
         </Row>
         <Row>
@@ -207,10 +169,7 @@ export default function Index() {
             major="Industrial Design"
           />
         </Row>
-        <Row
-          className="pl-5 pt-5 mb-3 font-weight-bold"
-          style={{ fontSize: 24 }}
-        >
+        <Row className={`pl-5 pt-3 pb-3 ${styles["team-header"]}`}>
           Operations
         </Row>
         <Row>

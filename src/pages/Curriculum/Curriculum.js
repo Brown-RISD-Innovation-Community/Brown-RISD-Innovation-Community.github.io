@@ -5,64 +5,13 @@ import Col from "react-bootstrap/Col";
 
 // import Col from "react-bootstrap/Col";
 import Arrow from "../../assets/arrow.svg";
-import NavigationBar from "../../components/NavigationBar";
+import NavigationBar from "../../components/NavigationBar/NavigationBar";
 import CurriculumIllustration from "../../assets/curriculum.png";
 
-function Circle(props) {
-  return (
-    <div
-      className="row m-0 justify-content-center align-items-center"
-      style={{
-        borderStyle: "dashed",
-        width: "200px",
-        height: "200px",
-        borderRadius: "100%",
-        backgroundColor: "rgb(251,222,5)",
-      }}
-    >
-      <h5>{props.heading}</h5>
-    </div>
-  );
-}
+import CircleRow from "./components/CircleRow/CircleRow";
+import CircleRowReverse from "./components/CircleRowReverse/CircleRowReverse";
 
-function CircleRow(props) {
-  return (
-    <Row className="mt-0 pb-5 d-flex align-items-center">
-      <Col xs={12} md={4} className="d-flex justify-content-center">
-        <Circle heading={props.heading} />
-      </Col>
-      <Col
-        xs={12}
-        md={7}
-        className="d-flex justify-content-left align-items-center"
-      >
-        {props.children}
-      </Col>
-    </Row>
-  );
-}
-
-function CircleRowReverse(props) {
-  return (
-    <Row className="mt-0 pb-5 d-flex align-items-center">
-      <Col
-        xs={12}
-        md={{ span: 4, order: 12 }}
-        className="d-flex justify-content-center"
-      >
-        <Circle heading={props.heading} />
-      </Col>
-      <Col
-        xs={12}
-        md={{ span: 7, order: 1, offset: 1 }}
-        className="d-flex justify-content-left align-items-center"
-      >
-        {props.children}
-      </Col>
-    </Row>
-  );
-}
-export default function index() {
+export default function Curriculum() {
   return (
     <div style={{ backgroundColor: "#1fd2bd", color: "black" }}>
       <NavigationBar linkFontColor="white" />

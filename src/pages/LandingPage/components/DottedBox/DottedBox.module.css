@@ -1,0 +1,15 @@
+.dashed {
+  border-style: dashed
+}
+
+.header {
+  font-weight: bold;
+  font-size: 60px;
+  text-transform: uppercase;
+  margin: auto;
+}
+
+.text {
+  text-align: left; 
+  margin: auto;
+}

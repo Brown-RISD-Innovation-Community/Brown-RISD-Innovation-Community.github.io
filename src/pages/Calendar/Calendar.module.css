@@ -1,0 +1,13 @@
+.calendar-container {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 64px;
+}
+
+.calendar {
+  border: solid 1px #777;
+  width: 1400px;
+  max-width: 100%;
+  height: 600px;
+  max-height: 70%;
+}

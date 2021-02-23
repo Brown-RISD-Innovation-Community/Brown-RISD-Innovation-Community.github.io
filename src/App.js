@@ -1,13 +1,13 @@
 import React from "react";
 import "./App.css";
-import LandingPage from "./pages/LandingPage";
+import LandingPage from "./pages/LandingPage/LandingPage";
 import "bootstrap/dist/css/bootstrap.min.css";
-import AboutUs from "./pages/AboutUs";
-import Calendar from "./pages/Calendar";
-import Curriculum from "./pages/Curriculum";
-import Contact from "./pages/Contact";
-import Projects from "./pages/Projects";
-import Footer from "./components/Footer";
+import AboutUs from "./pages/AboutUs/AboutUs";
+import Calendar from "./pages/Calendar/Calendar";
+import Curriculum from "./pages/Curriculum/Curriculum";
+import Contact from "./pages/Contact/Contact";
+import Projects from "./pages/Projects/Projects";
+import Footer from "./components/Footer/Footer";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 

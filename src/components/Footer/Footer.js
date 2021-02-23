@@ -2,8 +2,9 @@ import React from "react";
 import { Container, Col, Row } from "react-bootstrap";
 
 import colorLogo from "../../assets/multicolor.png";
+import styles from "./Footer.module.css";
 
-export default function index() {
+export default function Footer() {
   const getYear = () => {
     const date = new Date();
     return date.getFullYear();
@@ -11,12 +12,8 @@ export default function index() {
 
   const currYear = getYear();
 
-  const listStyle = {
-    color: "white",
-  };
-
   return (
-    <div className="p-3" style={{ backgroundColor: "#43464b", color: "white" }}>
+    <div className={`p-3 ${styles.container}`}>
       <Container>
         <Row>
           <Col xs={12} md={4}>
@@ -46,22 +43,22 @@ export default function index() {
           <Col xs={12} md={4} style={{ textAlign: "left" }}>
             <ul style={{ color: "white" }}>
               <li className="list-unstyled">
-                <a href="/about-us" style={listStyle}>
+                <a className={styles.link} href="/about-us">
                   - About Us
                 </a>
               </li>
               <li className="list-unstyled">
-                <a href="/calendar" style={listStyle}>
+                <a className={styles.link} href="/calendar">
                   - Calendar
                 </a>
               </li>
               <li className="list-unstyled">
-                <a href="/curriculum" style={listStyle}>
+                <a className={styles.link} href="/curriculum">
                   - Curriculum
                 </a>
               </li>
               <li className="list-unstyled">
-                <a href="/contact" style={listStyle}>
+                <a className={styles.link} href="/contact">
                   - Contact Us
                 </a>
               </li>

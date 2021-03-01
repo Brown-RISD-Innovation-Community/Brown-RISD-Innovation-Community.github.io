@@ -8,10 +8,11 @@ import {
   AiFillInstagram,
   AiFillLinkedin,
 } from "react-icons/ai";
+import styles from "./Contact.module.css";
 
 export default function Contact() {
   return (
-    <div style={{ backgroundColor: "#00BFA9", color: "#0B43CB" }}>
+    <div className={styles.page}>
       <NavigationBar linkFontColor="white" />
       <Container className="pt-5 mb-5">
         <Row className="font-weight-bold">
@@ -40,10 +41,7 @@ export default function Contact() {
             <strong>Looking to partner with us?</strong>
           </h2>
         </Row>
-        <Row
-          className="pt-3 pb-3 px-3"
-          style={{ fontSize: 24, wordBreak: "break-all" }}
-        >
+        <Row className={`pt-3 pb-3 px-3 ${styles.email}`}>
           Email us here:&nbsp;
           <a href="mailto:hello@brownrisdinnovation.com">
             hello@brownrisdinnovation.com

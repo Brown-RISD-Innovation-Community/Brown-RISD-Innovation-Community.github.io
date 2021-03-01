@@ -15,12 +15,15 @@ export default function Projects() {
   return (
     <div className={`pb-5 ${styles.page}`}>
       <NavigationBar linkFontColor="white" />
-      <Container className="d-sm-flex justify-content-center">
+      <Container className="d-sm-flex justify-content-center flex-column">
         <Row>
           <Col>
-            <div className="m-4" style={{ fontSize: "48px", margin: "5px" }}>
-              PROJECTS
-            </div>
+            <div className={`m-4 ${styles.header}`}>PROJECTS</div>
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <h2 className="mb-5">Fall 2020</h2>
           </Col>
         </Row>
       </Container>
@@ -33,12 +36,8 @@ export default function Projects() {
         />
       ))} */}
       <Container
-        style={{ color: "black", width: "700px", maxWidth: "100%" }}
-        className="d-sm-flex justify-content-center flex-column"
+        className={`d-sm-flex justify-content-center flex-column ${styles["projects-container"]}`}
       >
-        <h2 className="mb-5" style={{ color: "white" }}>
-          Fall 2020
-        </h2>
         <CardDeck>
           <ProjectCard
             title="Salty Caramel"

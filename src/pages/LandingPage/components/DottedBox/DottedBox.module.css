@@ -13,3 +13,7 @@
   text-align: left; 
   margin: auto;
 }
+
+.min-height-350 {
+  min-height: 350px;
+}

@@ -9,7 +9,7 @@ export default function DottedBox(props) {
   return (
     <Container className="py-5">
       <div className={styles.dashed}>
-        <Row style={{ minHeight: "350px" }}>
+        <Row className={styles["min-height-350"]}>
           <Col xs={12} md={4} className={`col-4 p-4 ${styles.header}`}>
             {props.cardTitle}
           </Col>

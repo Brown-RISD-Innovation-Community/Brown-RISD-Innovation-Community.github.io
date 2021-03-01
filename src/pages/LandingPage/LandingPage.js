@@ -25,20 +25,11 @@ export default function LandingPage() {
             />
           </Col>
           <Col xs={12} md={8}>
-            <div style={{ width: "600px", maxWidth: "100%" }}>
-              <Row
-                className="mb-2"
-                style={{
-                  fontWeight: "bold",
-                  fontSize: 30,
-                  // width: "600px",
-                  textTransform: "uppercase",
-                  marginBottom: "",
-                }}
-              >
+            <div className={styles["header-text-container"]}>
+              <Row className={`mb-2 ${styles["header-container"]}`}>
                 Brown RISD Innovation Community
               </Row>
-              <Row style={{ textAlign: "left" }} className="p-4">
+              <Row className={`p-4 align-left`}>
                 EMPHASIZING THE IMPORTANCE OF INNOVATION IN FIELDS BEYOND PURE
                 TECHNOLOGY THROUGH CREATING AN INCLUSIVE SPACE FOR
                 INTERDISCIPLINARY COLLABORATION AND LEARNING.
@@ -57,14 +48,7 @@ export default function LandingPage() {
         </div>
       </DottedBox>
       <DottedBox cardTitle={"Values"}>
-        <ul
-          style={{
-            listStyle: "none",
-            textAlign: "left",
-            paddingInlineStart: "0",
-          }}
-          className="p-4"
-        >
+        <ul className={`p-4 ${styles["values-list"]}`}>
           <li>INCLUSIVE COMMUNITY</li>
           <li>INTERSECTIONAL INNOVATION</li>
           <li>EMBRACING FEEDBACK</li>

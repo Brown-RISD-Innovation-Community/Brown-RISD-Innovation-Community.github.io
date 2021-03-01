@@ -7,13 +7,11 @@ import styles from "./Calendar.module.css";
 
 export default function Calendar() {
   return (
-    <div style={{ backgroundColor: "#D3143A", color: "white" }}>
+    <div className={styles.page}>
       <NavigationBar linkFontColor="white" />
       <Container>
-        <div className="m-4" style={{ fontSize: "48px", margin: "5px" }}>
-          CALENDAR
-        </div>
-        <div style={{ fontSize: "24px", marginBottom: "15px" }}>
+        <div className={`m-4 ${styles["calendar-header"]}`}>CALENDAR</div>
+        <div className={styles["calendar-header-2"]}>
           Our upcoming event information can be found below:
         </div>
         <Row className={styles["calendar-container"]}>

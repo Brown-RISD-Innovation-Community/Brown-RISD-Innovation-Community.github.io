@@ -13,3 +13,20 @@
   width: 350px;
   max-width: 100%
 }
+
+.header-text-container {
+  width: 600px;
+  max-width: 100% 
+}
+
+.header-container {
+    font-weight: bold;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.values-list {
+  list-style: none;
+  text-align: left;
+  padding-inline-start: 0;
+}

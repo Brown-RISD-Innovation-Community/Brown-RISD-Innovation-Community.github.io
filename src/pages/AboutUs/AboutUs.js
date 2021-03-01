@@ -27,10 +27,7 @@ import styles from "./AboutUs.module.css";
 
 export default function AboutUs() {
   return (
-    <div
-      className="pb-5"
-      style={{ backgroundColor: "#FADD02", color: "#0B43CB" }}
-    >
+    <div className={`pb-5 ${styles.page}`}>
       <NavigationBar linkFontColor="white" />
       <Container className="pt-5 d-flex pb-5 ">
         <Row>
@@ -41,23 +38,18 @@ export default function AboutUs() {
             <Row className="pt-3 pb-3">
               <div className={styles["header-text"]}>
                 BRIC BRINGS TOGETHER STUDENTS FROM{" "}
-                <bdi style={{ textDecoration: "underline" }}>
-                  BROWN UNIVERSITY
-                </bdi>{" "}
-                AND <bdi style={{ textDecoration: "underline" }}>RISD</bdi>. OUR
-                INTERESTS RANGE FROM ENTREPRENEURSHIP AND HISTORY TO DESIGN AND
+                <bdi className={styles.underline}>BROWN UNIVERSITY</bdi> AND{" "}
+                <bdi className={styles.underline}>RISD</bdi>. OUR INTERESTS
+                RANGE FROM ENTREPRENEURSHIP AND HISTORY TO DESIGN AND
                 TECHNOLOGY.{" "}
               </div>
             </Row>
             <Row>
-              <div className="pl-5" style={{ color: "#0B43CB", fontSize: 24 }}>
-                MEET OUR TEAM
-              </div>
+              <div className={`pl-5 ${styles["font-24"]}`}>MEET OUR TEAM</div>
               <img
-                className="mt-3 ml-4"
+                className={`mt-3 ml-4 ${styles.arrow}`}
                 src={Arrow}
                 alt="Arrow to meet the team"
-                style={{ width: "300px", maxWidth: "80%" }}
               />
             </Row>
           </Col>
@@ -65,18 +57,12 @@ export default function AboutUs() {
             <img
               src={TeamIllustration}
               alt="Illustration for Team Page"
-              style={{ width: "350px", maxWidth: "100%" }}
+              className={styles["team-img"]}
             />
           </Col>
         </Row>
       </Container>
-      <Container
-        style={{
-          backgroundColor: "white",
-          borderRadius: "25px",
-          maxWidth: "90%",
-        }}
-      >
+      <Container className={styles.container}>
         <Row className={`pl-5 pt-3 pb-3 ${styles["team-header"]}`}>
           Co-Chairs
         </Row>
@@ -96,16 +82,9 @@ export default function AboutUs() {
           />
         </Row>
       </Container>
-      <Container
-        className="mt-5 pb-5"
-        style={{
-          backgroundColor: "white",
-          borderRadius: "25px",
-          maxWidth: "90%",
-        }}
-      >
+      <Container className={`mt-5 pb-5 ${styles.container}`}>
         <Row className={`pl-5 pt-3 pb-3 ${styles["team-header"]}`}>E-BOARD</Row>
-        <Row className="pl-5 mb-3 font-weight-bold" style={{ fontSize: 24 }}>
+        <Row className={`pl-5 mb-3 font-weight-bold ${styles["font-24"]}`}>
           Curriculum
         </Row>
         <Row>

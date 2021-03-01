@@ -3,3 +3,13 @@
   color: white;
   height: 100%;
 }
+
+.header {
+  font-size: 48px
+}
+
+.projects-container {
+  color: black;
+  width: 700px;
+  max-width: 100% 
+}

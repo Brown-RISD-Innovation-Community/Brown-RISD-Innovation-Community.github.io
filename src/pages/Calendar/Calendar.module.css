@@ -1,3 +1,8 @@
+.page {
+ background-color: #D3143A;
+ color: white
+}
+
 .calendar-container {
   display: flex;
   justify-content: center;
@@ -10,4 +15,13 @@
   max-width: 100%;
   height: 600px;
   max-height: 70%;
+}
+
+.calendar-header {
+  font-size: 48px;
+}
+
+.calendar-header-2 {
+  font-size: 24px;
+  margin-bottom: 15px
 }

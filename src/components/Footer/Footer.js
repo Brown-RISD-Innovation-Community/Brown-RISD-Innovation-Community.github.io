@@ -18,10 +18,9 @@ export default function Footer() {
         <Row>
           <Col xs={12} md={4}>
             <img
-              className="mt-2"
+              className={`mt-2 ${styles.img}`}
               src={colorLogo}
               alt="BRIC logo"
-              style={{ width: "150px" }}
             />
           </Col>
           <Col xs={12} md={4}>
@@ -30,18 +29,13 @@ export default function Footer() {
             </div>
             <iframe
               src="https://brownrisdinnovation.substack.com/embed"
-              style={{
-                width: "48",
-                height: "100px",
-                scrolling: "no",
-                maxWidth: "100%",
-              }}
+              className={styles["email-input"]}
               frameBorder="0"
               title="Joining the substack"
             ></iframe>
           </Col>
-          <Col xs={12} md={4} style={{ textAlign: "left" }}>
-            <ul style={{ color: "white" }}>
+          <Col xs={12} md={4} className="align-left">
+            <ul>
               <li className="list-unstyled">
                 <a className={styles.link} href="/about-us">
                   - About Us
@@ -65,7 +59,7 @@ export default function Footer() {
             </ul>
           </Col>
         </Row>
-        <Row className="pt-4" style={{ justifyContent: "center" }}>
+        <Row className="pt-4 justify-content-center">
           © {currYear} Brown RISD Innovation Community
         </Row>
       </Container>

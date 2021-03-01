@@ -7,3 +7,17 @@
   color: white
 }
 
+.img {
+  width: 150px
+}
+
+.email-input {
+  width: 48;
+  height: 100px;
+  max-width: 100%;
+}
+
+.route-links {
+  color: white
+}
+

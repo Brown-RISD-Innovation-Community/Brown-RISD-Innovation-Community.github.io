@@ -29,7 +29,7 @@ export default function LandingPage() {
               <Row className={`mb-2 ${styles["header-container"]}`}>
                 Brown RISD Innovation Community
               </Row>
-              <Row className={`p-4 ${styles["align-left"]}`}>
+              <Row className={`p-4 align-left`}>
                 EMPHASIZING THE IMPORTANCE OF INNOVATION IN FIELDS BEYOND PURE
                 TECHNOLOGY THROUGH CREATING AN INCLUSIVE SPACE FOR
                 INTERDISCIPLINARY COLLABORATION AND LEARNING.

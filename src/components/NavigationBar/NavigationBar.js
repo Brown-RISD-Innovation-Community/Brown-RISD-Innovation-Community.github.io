@@ -7,10 +7,10 @@ import styles from "./NavigationBar.module.css";
 
 export default function NavigationBar({ linkFontColor }) {
   return (
-    <div className="p-4" style={{ color: "white" }}>
-      <Navbar style={{ display: "flex" }} expand="lg">
+    <div className="p-4">
+      <Navbar className="flex" expand="lg">
         <Navbar.Brand href="/" className="m-auto">
-          <img style={{ width: "150px" }} src={Logo} alt="BRIC Default Logo" />
+          <img className={styles.logo} src={Logo} alt="BRIC Default Logo" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">

@@ -25,10 +25,6 @@
     text-transform: uppercase;
 }
 
-.align-left {
-  text-align: left;
-}
-
 .values-list {
   list-style: none;
   text-align: left;

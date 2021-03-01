@@ -1,3 +1,8 @@
+.page {
+  background-color: #FADD02;
+  color: #0B43CB;
+}
+
 .header {
   font-weight: bold;
   color: #0B43CB;
@@ -10,9 +15,33 @@
   text-align: left;
 }
 
+.font-24 {
+  font-size: 24px
+}
+
+.arrow {
+  width: 300px;
+  max-width: 80%;
+}
+
 .team-header {
   font-size: 32px;
   font-weight: bold;
   color: #0B43CB;
   text-align: left;
+}
+
+.team-img {
+  width: 350px;
+  max-width: 100%
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.container {
+  background-color: white;
+  border-radius: 25px;
+  max-width: 90%;
 }

@@ -5,3 +5,11 @@
 .align-left {
   text-align: left;
 }
+
+.white-text {
+  color: white;
+}
+
+.black-text {
+  color: black;
+}

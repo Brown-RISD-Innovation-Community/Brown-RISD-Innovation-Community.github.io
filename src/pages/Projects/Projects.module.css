@@ -8,8 +8,12 @@
   font-size: 48px
 }
 
+.white-text {
+  color: white;
+}
+
 .projects-container {
   color: black;
-  width: 700px;
-  max-width: 100% 
+  width: 1000px;
+  max-width: 90% 
 }
